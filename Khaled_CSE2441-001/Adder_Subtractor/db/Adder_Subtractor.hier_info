@@ -1,0 +1,94 @@
+|Adder_Subtractor
+Cout <= RippleCarryAdder:inst.S4
+A0 => RippleCarryAdder:inst.A0
+C0 => inst2.IN0
+C0 => RippleCarryAdder:inst.C0
+C0 => inst3.IN0
+C0 => inst4.IN0
+C0 => inst5.IN0
+B0 => inst2.IN1
+A1 => RippleCarryAdder:inst.A1
+B1 => inst3.IN1
+A2 => RippleCarryAdder:inst.A2
+B2 => inst4.IN1
+A3 => RippleCarryAdder:inst.A3
+B3 => inst5.IN1
+R3 <= RippleCarryAdder:inst.S3
+R2 <= RippleCarryAdder:inst.S2
+R1 <= RippleCarryAdder:inst.S1
+R0 <= RippleCarryAdder:inst.S0
+
+
+|Adder_Subtractor|RippleCarryAdder:inst
+S0 <= FullAdder:inst8.P
+A0 => FullAdder:inst8.A
+B0 => FullAdder:inst8.B
+C0 => FullAdder:inst8.C
+S1 <= FullAdder:inst7.P
+A1 => FullAdder:inst7.A
+B1 => FullAdder:inst7.B
+S2 <= FullAdder:inst6.P
+A2 => FullAdder:inst6.A
+B2 => FullAdder:inst6.B
+S3 <= FullAdder:inst9.P
+A3 => FullAdder:inst9.A
+B3 => FullAdder:inst9.B
+S4 <= FullAdder:inst9.Q
+
+
+|Adder_Subtractor|RippleCarryAdder:inst|FullAdder:inst8
+P <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN0
+B => inst2.IN1
+C => inst1.IN1
+C => inst3.IN1
+C => inst5.IN1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_Subtractor|RippleCarryAdder:inst|FullAdder:inst7
+P <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN0
+B => inst2.IN1
+C => inst1.IN1
+C => inst3.IN1
+C => inst5.IN1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_Subtractor|RippleCarryAdder:inst|FullAdder:inst6
+P <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN0
+B => inst2.IN1
+C => inst1.IN1
+C => inst3.IN1
+C => inst5.IN1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_Subtractor|RippleCarryAdder:inst|FullAdder:inst9
+P <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN0
+B => inst2.IN1
+C => inst1.IN1
+C => inst3.IN1
+C => inst5.IN1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+

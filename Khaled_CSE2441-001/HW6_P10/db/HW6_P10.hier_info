@@ -1,0 +1,7 @@
+|HW6_P10
+x => z.DATAIN
+CLK => ~NO_FANOUT~
+CLR => ~NO_FANOUT~
+z <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+

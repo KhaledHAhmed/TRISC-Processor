@@ -1,0 +1,173 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'SysClock'
+Slack : -8.848
+TNS   : -953.659
+
+Type  : Slow 1200mV 85C Model Setup 'ClockIn'
+Slack : -7.436
+TNS   : -758.896
+
+Type  : Slow 1200mV 85C Model Setup 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : -0.534
+TNS   : -0.687
+
+Type  : Slow 1200mV 85C Model Setup 'OnOffToggle:DivideX2|state'
+Slack : -0.170
+TNS   : -0.328
+
+Type  : Slow 1200mV 85C Model Hold 'ClockIn'
+Slack : -1.333
+TNS   : -3.399
+
+Type  : Slow 1200mV 85C Model Hold 'SysClock'
+Slack : -0.102
+TNS   : -0.102
+
+Type  : Slow 1200mV 85C Model Hold 'OnOffToggle:DivideX2|state'
+Slack : 0.349
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : 0.349
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : -1.265
+TNS   : -5.060
+
+Type  : Slow 1200mV 85C Model Removal 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : 1.678
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SysClock'
+Slack : -3.000
+TNS   : -206.435
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ClockIn'
+Slack : -3.000
+TNS   : -195.211
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'OnOffToggle:DivideX2|state'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 0C Model Setup 'SysClock'
+Slack : -8.244
+TNS   : -876.572
+
+Type  : Slow 1200mV 0C Model Setup 'ClockIn'
+Slack : -6.932
+TNS   : -695.994
+
+Type  : Slow 1200mV 0C Model Setup 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : -0.409
+TNS   : -0.464
+
+Type  : Slow 1200mV 0C Model Setup 'OnOffToggle:DivideX2|state'
+Slack : -0.069
+TNS   : -0.129
+
+Type  : Slow 1200mV 0C Model Hold 'ClockIn'
+Slack : -1.319
+TNS   : -5.103
+
+Type  : Slow 1200mV 0C Model Hold 'SysClock'
+Slack : -0.178
+TNS   : -0.178
+
+Type  : Slow 1200mV 0C Model Hold 'OnOffToggle:DivideX2|state'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : -1.226
+TNS   : -4.904
+
+Type  : Slow 1200mV 0C Model Removal 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : 1.627
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SysClock'
+Slack : -3.000
+TNS   : -206.435
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ClockIn'
+Slack : -3.000
+TNS   : -195.211
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'OnOffToggle:DivideX2|state'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Fast 1200mV 0C Model Setup 'SysClock'
+Slack : -3.533
+TNS   : -356.717
+
+Type  : Fast 1200mV 0C Model Setup 'ClockIn'
+Slack : -2.830
+TNS   : -260.600
+
+Type  : Fast 1200mV 0C Model Setup 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : 0.325
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'OnOffToggle:DivideX2|state'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ClockIn'
+Slack : -0.802
+TNS   : -3.399
+
+Type  : Fast 1200mV 0C Model Hold 'SysClock'
+Slack : -0.149
+TNS   : -0.149
+
+Type  : Fast 1200mV 0C Model Hold 'OnOffToggle:DivideX2|state'
+Slack : 0.153
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : 0.153
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : 0.473
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ClockIn'
+Slack : -3.000
+TNS   : -193.272
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SysClock'
+Slack : -3.000
+TNS   : -169.258
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'OnOffToggle:DivideX2|state'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'triscCU:CU|triscFSM:triscFSM_inst|state.E'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------

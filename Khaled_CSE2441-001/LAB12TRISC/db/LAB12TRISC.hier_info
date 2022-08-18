@@ -1,0 +1,87 @@
+|LAB12TRISC
+C0 <= TRISC:inst1.C0
+Clock => TRISC:inst1.SysClock
+Start/Stop => TRISC:inst1.StartStop
+W => Instruction_Decoder:inst.w
+X => Instruction_Decoder:inst.x
+Y => Instruction_Decoder:inst.y
+Z => Instruction_Decoder:inst.z
+C1 <= TRISC:inst1.C1
+C2 <= TRISC:inst1.C2
+C3 <= TRISC:inst1.C3
+C4 <= TRISC:inst1.C4
+C5 <= TRISC:inst1.C5
+C7 <= TRISC:inst1.C7
+C8 <= TRISC:inst1.C8
+C9 <= TRISC:inst1.C9
+C10 <= TRISC:inst1.C10
+C11 <= TRISC:inst1.C11
+C12 <= TRISC:inst1.C12
+C13 <= TRISC:inst1.C13
+C14 <= TRISC:inst1.C14
+
+
+|LAB12TRISC|TRISC:inst1
+SysClock => state~1.DATAIN
+StartStop => state~3.DATAIN
+INC => nextstate.OUTPUTSELECT
+INC => nextstate.OUTPUTSELECT
+INC => nextstate.OUTPUTSELECT
+INC => nextstate.OUTPUTSELECT
+INC => nextstate.OUTPUTSELECT
+INC => nextstate.OUTPUTSELECT
+INC => nextstate.F.DATAB
+CLR => nextstate.OUTPUTSELECT
+CLR => nextstate.OUTPUTSELECT
+CLR => nextstate.OUTPUTSELECT
+CLR => nextstate.OUTPUTSELECT
+CLR => nextstate.OUTPUTSELECT
+CLR => nextstate.DATAA
+JMP => nextstate.OUTPUTSELECT
+JMP => nextstate.OUTPUTSELECT
+JMP => nextstate.OUTPUTSELECT
+JMP => nextstate.OUTPUTSELECT
+JMP => nextstate.DATAA
+LDA => nextstate.OUTPUTSELECT
+LDA => nextstate.OUTPUTSELECT
+LDA => nextstate.DATAA
+STA => nextstate.OUTPUTSELECT
+STA => nextstate.OUTPUTSELECT
+STA => nextstate.OUTPUTSELECT
+STA => nextstate.DATAA
+ADD => nextstate.DATAA
+ADD => nextstate.DATAA
+C0 <= C0.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= C1.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= C7.DB_MAX_OUTPUT_PORT_TYPE
+C3 <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+C4 <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C5 <= C5.DB_MAX_OUTPUT_PORT_TYPE
+C7 <= C7.DB_MAX_OUTPUT_PORT_TYPE
+C8 <= C8.DB_MAX_OUTPUT_PORT_TYPE
+C9 <= C9.DB_MAX_OUTPUT_PORT_TYPE
+C10 <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+C11 <= C11.DB_MAX_OUTPUT_PORT_TYPE
+C12 <= <GND>
+C13 <= <GND>
+C14 <= C14.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB12TRISC|Instruction_Decoder:inst
+w => Decoder0.IN0
+x => Decoder0.IN1
+y => Decoder0.IN2
+z => Decoder0.IN3
+HLT <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JPN <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JPZ <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JMP <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+CLR <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+INC <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+XOR <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+SUB <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ADD <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+SAT <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+LDA <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

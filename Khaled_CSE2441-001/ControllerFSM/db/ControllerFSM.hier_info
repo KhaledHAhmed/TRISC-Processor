@@ -1,0 +1,21 @@
+|ControllerFSM
+SysClock => state~5.DATAIN
+StartStop => state~9.DATAIN
+INC => nextstate.H~1.OUTPUTSELECT
+INC => nextstate.G~0.OUTPUTSELECT
+INC => nextstate.E~0.IN1
+INC => nextstate.F~0.DATAA
+CLR => nextstate.E~1.IN0
+CLR => nextstate.G~0.DATAA
+CLR => nextstate.H~1.DATAA
+JMP => nextstate.E~1.IN1
+C0 <= C0~0.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= C1~0.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= C7~0.DB_MAX_OUTPUT_PORT_TYPE
+C3 <= C3~0.DB_MAX_OUTPUT_PORT_TYPE
+C4 <= C4~0.DB_MAX_OUTPUT_PORT_TYPE
+C7 <= C7~0.DB_MAX_OUTPUT_PORT_TYPE
+C8 <= C8~0.DB_MAX_OUTPUT_PORT_TYPE
+C9 <= C9~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

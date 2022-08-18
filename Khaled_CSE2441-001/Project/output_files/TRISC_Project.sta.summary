@@ -1,0 +1,213 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'LAB12TRISC:inst2|TRISC:inst1|state.T'
+Slack : -8.626
+TNS   : -31.723
+
+Type  : Slow Model Setup 'LAB12TRISC:inst2|TRISC:inst1|state.F'
+Slack : -6.883
+TNS   : -21.218
+
+Type  : Slow Model Setup 'LAB12TRISC:inst2|TRISC:inst1|state.E'
+Slack : -6.031
+TNS   : -37.200
+
+Type  : Slow Model Setup 'Accumulater:inst6|Counter:inst2|74193:inst|26~1'
+Slack : -5.489
+TNS   : -15.069
+
+Type  : Slow Model Setup 'Accumulater:inst6|Counter:inst2|74193:inst|24~1'
+Slack : -5.188
+TNS   : -5.188
+
+Type  : Slow Model Setup 'Clock'
+Slack : -4.033
+TNS   : -85.776
+
+Type  : Slow Model Hold 'Clock'
+Slack : -3.366
+TNS   : -39.458
+
+Type  : Slow Model Hold 'Accumulater:inst6|Counter:inst2|74193:inst|26~1'
+Slack : -2.930
+TNS   : -2.930
+
+Type  : Slow Model Hold 'LAB12TRISC:inst2|TRISC:inst1|state.F'
+Slack : -2.782
+TNS   : -3.391
+
+Type  : Slow Model Hold 'LAB12TRISC:inst2|TRISC:inst1|state.T'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow Model Hold 'Accumulater:inst6|Counter:inst2|74193:inst|24~1'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow Model Hold 'LAB12TRISC:inst2|TRISC:inst1|state.E'
+Slack : 1.457
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'LAB12TRISC:inst2|TRISC:inst1|state.F'
+Slack : -7.194
+TNS   : -23.010
+
+Type  : Slow Model Recovery 'LAB12TRISC:inst2|TRISC:inst1|state.E'
+Slack : -6.530
+TNS   : -24.196
+
+Type  : Slow Model Recovery 'Accumulater:inst6|Counter:inst2|74193:inst|26~1'
+Slack : -5.968
+TNS   : -16.550
+
+Type  : Slow Model Recovery 'Accumulater:inst6|Counter:inst2|74193:inst|24~1'
+Slack : -5.667
+TNS   : -5.667
+
+Type  : Slow Model Removal 'LAB12TRISC:inst2|TRISC:inst1|state.F'
+Slack : 0.507
+TNS   : 0.000
+
+Type  : Slow Model Removal 'Accumulater:inst6|Counter:inst2|74193:inst|26~1'
+Slack : 0.859
+TNS   : 0.000
+
+Type  : Slow Model Removal 'Accumulater:inst6|Counter:inst2|74193:inst|24~1'
+Slack : 0.894
+TNS   : 0.000
+
+Type  : Slow Model Removal 'LAB12TRISC:inst2|TRISC:inst1|state.E'
+Slack : 5.076
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Clock'
+Slack : -2.064
+TNS   : -167.483
+
+Type  : Slow Model Minimum Pulse Width 'LAB12TRISC:inst2|TRISC:inst1|state.E'
+Slack : -0.611
+TNS   : -9.776
+
+Type  : Slow Model Minimum Pulse Width 'LAB12TRISC:inst2|TRISC:inst1|state.F'
+Slack : -0.611
+TNS   : -4.888
+
+Type  : Slow Model Minimum Pulse Width 'LAB12TRISC:inst2|TRISC:inst1|state.T'
+Slack : -0.611
+TNS   : -4.888
+
+Type  : Slow Model Minimum Pulse Width 'Accumulater:inst6|Counter:inst2|74193:inst|26~1'
+Slack : -0.611
+TNS   : -3.666
+
+Type  : Slow Model Minimum Pulse Width 'Accumulater:inst6|Counter:inst2|74193:inst|24~1'
+Slack : -0.611
+TNS   : -1.222
+
+Type  : Fast Model Setup 'LAB12TRISC:inst2|TRISC:inst1|state.T'
+Slack : -3.210
+TNS   : -10.912
+
+Type  : Fast Model Setup 'Accumulater:inst6|Counter:inst2|74193:inst|26~1'
+Slack : -2.664
+TNS   : -6.364
+
+Type  : Fast Model Setup 'Accumulater:inst6|Counter:inst2|74193:inst|24~1'
+Slack : -2.572
+TNS   : -2.572
+
+Type  : Fast Model Setup 'LAB12TRISC:inst2|TRISC:inst1|state.E'
+Slack : -2.514
+TNS   : -12.394
+
+Type  : Fast Model Setup 'LAB12TRISC:inst2|TRISC:inst1|state.F'
+Slack : -2.281
+TNS   : -7.355
+
+Type  : Fast Model Setup 'Clock'
+Slack : -1.460
+TNS   : -28.344
+
+Type  : Fast Model Hold 'Clock'
+Slack : -1.924
+TNS   : -25.332
+
+Type  : Fast Model Hold 'Accumulater:inst6|Counter:inst2|74193:inst|26~1'
+Slack : -1.211
+TNS   : -1.211
+
+Type  : Fast Model Hold 'LAB12TRISC:inst2|TRISC:inst1|state.F'
+Slack : -1.172
+TNS   : -1.595
+
+Type  : Fast Model Hold 'LAB12TRISC:inst2|TRISC:inst1|state.T'
+Slack : -0.058
+TNS   : -0.073
+
+Type  : Fast Model Hold 'Accumulater:inst6|Counter:inst2|74193:inst|24~1'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Fast Model Hold 'LAB12TRISC:inst2|TRISC:inst1|state.E'
+Slack : 0.534
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'Accumulater:inst6|Counter:inst2|74193:inst|26~1'
+Slack : -2.963
+TNS   : -7.350
+
+Type  : Fast Model Recovery 'Accumulater:inst6|Counter:inst2|74193:inst|24~1'
+Slack : -2.871
+TNS   : -2.871
+
+Type  : Fast Model Recovery 'LAB12TRISC:inst2|TRISC:inst1|state.E'
+Slack : -2.851
+TNS   : -9.042
+
+Type  : Fast Model Recovery 'LAB12TRISC:inst2|TRISC:inst1|state.F'
+Slack : -2.580
+TNS   : -8.613
+
+Type  : Fast Model Removal 'LAB12TRISC:inst2|TRISC:inst1|state.F'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Fast Model Removal 'Accumulater:inst6|Counter:inst2|74193:inst|26~1'
+Slack : 0.809
+TNS   : 0.000
+
+Type  : Fast Model Removal 'Accumulater:inst6|Counter:inst2|74193:inst|24~1'
+Slack : 0.840
+TNS   : 0.000
+
+Type  : Fast Model Removal 'LAB12TRISC:inst2|TRISC:inst1|state.E'
+Slack : 2.616
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Clock'
+Slack : -2.000
+TNS   : -158.222
+
+Type  : Fast Model Minimum Pulse Width 'LAB12TRISC:inst2|TRISC:inst1|state.E'
+Slack : -0.500
+TNS   : -8.000
+
+Type  : Fast Model Minimum Pulse Width 'LAB12TRISC:inst2|TRISC:inst1|state.F'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'LAB12TRISC:inst2|TRISC:inst1|state.T'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'Accumulater:inst6|Counter:inst2|74193:inst|26~1'
+Slack : -0.500
+TNS   : -3.000
+
+Type  : Fast Model Minimum Pulse Width 'Accumulater:inst6|Counter:inst2|74193:inst|24~1'
+Slack : -0.500
+TNS   : -1.000
+
+------------------------------------------------------------

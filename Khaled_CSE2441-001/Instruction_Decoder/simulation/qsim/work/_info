@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\14\Desktop\Khaled_CSE2441-001\Instruction_Decoder\simulation\qsim
+vInstruction_Decoder
+Z1 ISo3z1CAWXi1P[3hn9<I>Y2
+Z2 VI^EMiIX;?gSCL2^nc6`KA2
+Z3 dC:\Users\14\Desktop\Khaled_CSE2441-001\Instruction_Decoder\simulation\qsim
+Z4 w1605649652
+Z5 8Instruction_Decoder.vo
+Z6 FInstruction_Decoder.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@instruction_@decoder
+!i10b 1
+Z10 !s100 5lG75zUaOQUZH8V<TclFV1
+!s85 0
+Z11 !s108 1605649655.573000
+Z12 !s107 Instruction_Decoder.vo|
+Z13 !s90 -work|work|Instruction_Decoder.vo|
+!s101 -O0
+vInstruction_Decoder_vlg_check_tst
+!i10b 1
+!s100 IM`8T<13_@7acVIDi]6d]3
+IU?TVzgCESGkAl;QPhl5241
+V0@An1J_D=nf:kN4L5U7>A1
+R3
+Z14 w1605649651
+Z15 8Instruction_Decoder.vt
+Z16 FInstruction_Decoder.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z17 !s108 1605649655.845000
+Z18 !s107 Instruction_Decoder.vt|
+Z19 !s90 -work|work|Instruction_Decoder.vt|
+!s101 -O0
+R8
+n@instruction_@decoder_vlg_check_tst
+vInstruction_Decoder_vlg_sample_tst
+!i10b 1
+!s100 BLN5n87c0=T4bkQPT0?7T0
+In2[Lkb0?ZQ1jT3ElOci=b1
+VH`l:TUVPVH:bOFL`jFhhG0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@instruction_@decoder_vlg_sample_tst
+vInstruction_Decoder_vlg_vec_tst
+!i10b 1
+!s100 gEMZB1Mho^BV<ghP:`8M50
+I41>ZUnk503dD?_8d0O2C23
+VN:G@UhCRJdz?f3IK5WQ==1
+R3
+R14
+R15
+R16
+L0 428
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@instruction_@decoder_vlg_vec_tst

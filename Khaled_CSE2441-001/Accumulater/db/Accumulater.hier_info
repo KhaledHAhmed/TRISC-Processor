@@ -1,0 +1,69 @@
+|Accumulater
+AC3out <= Counter:inst2.Aout
+Load => Counter:inst2.Load
+ALU0 => 74157:inst.A1
+MDR0 => 74157:inst.B1
+ALU/MDR => 74157:inst.SEL
+MDR1 => 74157:inst.B2
+ALU2 => 74157:inst.A3
+MDR2 => 74157:inst.B3
+ALU1 => 74157:inst.A2
+MDR3 => 74157:inst.B4
+ALU3 => 74157:inst.A4
+Increment => Counter:inst2.Increment
+Clear => Counter:inst2.Clear
+AC2out <= Counter:inst2.Bout
+AC0out <= Counter:inst2.Dout
+AC1out <= Counter:inst2.Cout
+
+
+|Accumulater|Counter:inst2
+Aout <= 74193:inst.QA
+D => 74193:inst.D
+C => 74193:inst.C
+B => 74193:inst.B
+A => 74193:inst.A
+Clear => inst3.IN0
+Increment => inst4.IN0
+Load => 74193:inst.LDN
+Bout <= 74193:inst.QB
+Cout <= 74193:inst.QC
+Dout <= 74193:inst.QD
+
+
+|Accumulater|Counter:inst2|74193:inst
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Accumulater|74157:inst
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+

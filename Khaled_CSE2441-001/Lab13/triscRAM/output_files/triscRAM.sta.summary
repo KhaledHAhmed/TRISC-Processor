@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'RAMclock'
+Slack : -3.326
+TNS   : -21.226
+
+Type  : Slow 1200mV 85C Model Setup 'OnOffToggle:DivideX2|state'
+Slack : -0.317
+TNS   : -0.497
+
+Type  : Slow 1200mV 85C Model Hold 'OnOffToggle:DivideX2|state'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'RAMclock'
+Slack : 2.141
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RAMclock'
+Slack : -3.000
+TNS   : -31.045
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'OnOffToggle:DivideX2|state'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 0C Model Setup 'RAMclock'
+Slack : -3.078
+TNS   : -18.884
+
+Type  : Slow 1200mV 0C Model Setup 'OnOffToggle:DivideX2|state'
+Slack : -0.197
+TNS   : -0.276
+
+Type  : Slow 1200mV 0C Model Hold 'OnOffToggle:DivideX2|state'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'RAMclock'
+Slack : 1.974
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RAMclock'
+Slack : -3.000
+TNS   : -30.066
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'OnOffToggle:DivideX2|state'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Fast 1200mV 0C Model Setup 'RAMclock'
+Slack : -1.056
+TNS   : -4.065
+
+Type  : Fast 1200mV 0C Model Setup 'OnOffToggle:DivideX2|state'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'OnOffToggle:DivideX2|state'
+Slack : 0.153
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'RAMclock'
+Slack : 0.717
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RAMclock'
+Slack : -3.000
+TNS   : -16.818
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'OnOffToggle:DivideX2|state'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------

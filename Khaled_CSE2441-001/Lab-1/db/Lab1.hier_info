@@ -1,0 +1,17 @@
+|Lab1
+f <= inst.DB_MAX_OUTPUT_PORT_TYPE
+C => inst3.IN0
+C => C_Out.DATAIN
+B => inst3.IN1
+B => inst1.IN0
+B => B_Out.DATAIN
+A => inst2.IN0
+A => A_Out.DATAIN
+D => inst4.IN1
+D => D_Out.DATAIN
+D_Out <= D.DB_MAX_OUTPUT_PORT_TYPE
+A_Out <= A.DB_MAX_OUTPUT_PORT_TYPE
+B_Out <= B.DB_MAX_OUTPUT_PORT_TYPE
+C_Out <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+

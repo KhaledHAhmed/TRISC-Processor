@@ -1,0 +1,265 @@
+Simulator report for TRISC_Controller
+Tue Nov 17 16:23:36 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 71 nodes     ;
+; Simulation Coverage         ;      54.93 % ;
+; Total Number of Transitions ; 187          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                              ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                           ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                 ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                  ;               ;
+; Vector input source                                                                        ; C:/Users/14/Desktop/Khaled_CSE2441-001/TRISC_Controller/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                   ; On            ;
+; Check outputs                                                                              ; Off                                                                  ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                   ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                   ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                   ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                   ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                  ; Off           ;
+; Detect glitches                                                                            ; Off                                                                  ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                  ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                  ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                  ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                  ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                   ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                           ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                  ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                  ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                 ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      54.93 % ;
+; Total nodes checked                                 ; 71           ;
+; Total output ports checked                          ; 71           ;
+; Total output ports with complete 1/0-value coverage ; 39           ;
+; Total output ports with no 1/0-value coverage       ; 32           ;
+; Total output ports with no 1-value coverage         ; 32           ;
+; Total output ports with no 0-value coverage         ; 32           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                    ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; Node Name                                            ; Output Port Name                                     ; Output Port Type ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; |TRISC_Controller|C0                                 ; |TRISC_Controller|C0                                 ; pin_out          ;
+; |TRISC_Controller|Clock                              ; |TRISC_Controller|Clock                              ; out              ;
+; |TRISC_Controller|Clear                              ; |TRISC_Controller|Clear                              ; out              ;
+; |TRISC_Controller|C1                                 ; |TRISC_Controller|C1                                 ; pin_out          ;
+; |TRISC_Controller|C2                                 ; |TRISC_Controller|C2                                 ; pin_out          ;
+; |TRISC_Controller|C3                                 ; |TRISC_Controller|C3                                 ; pin_out          ;
+; |TRISC_Controller|C4                                 ; |TRISC_Controller|C4                                 ; pin_out          ;
+; |TRISC_Controller|C7                                 ; |TRISC_Controller|C7                                 ; pin_out          ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.E_188 ; |TRISC_Controller|ControllerFSM:inst|nextstate.E_188 ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|state.A         ; |TRISC_Controller|ControllerFSM:inst|state.A         ; regout           ;
+; |TRISC_Controller|ControllerFSM:inst|state.B         ; |TRISC_Controller|ControllerFSM:inst|state.B         ; regout           ;
+; |TRISC_Controller|ControllerFSM:inst|state.C         ; |TRISC_Controller|ControllerFSM:inst|state.C         ; regout           ;
+; |TRISC_Controller|ControllerFSM:inst|state.D         ; |TRISC_Controller|ControllerFSM:inst|state.D         ; regout           ;
+; |TRISC_Controller|ControllerFSM:inst|state.E         ; |TRISC_Controller|ControllerFSM:inst|state.E         ; regout           ;
+; |TRISC_Controller|ControllerFSM:inst|state.H         ; |TRISC_Controller|ControllerFSM:inst|state.H         ; regout           ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.H_155 ; |TRISC_Controller|ControllerFSM:inst|nextstate.H_155 ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|comb~2          ; |TRISC_Controller|ControllerFSM:inst|comb~2          ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.D_201 ; |TRISC_Controller|ControllerFSM:inst|nextstate.D_201 ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|comb~5          ; |TRISC_Controller|ControllerFSM:inst|comb~5          ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.C_214 ; |TRISC_Controller|ControllerFSM:inst|nextstate.C_214 ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|C4              ; |TRISC_Controller|ControllerFSM:inst|C4              ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.H~0   ; |TRISC_Controller|ControllerFSM:inst|nextstate.H~0   ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|WideOr0         ; |TRISC_Controller|ControllerFSM:inst|WideOr0         ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.B_227 ; |TRISC_Controller|ControllerFSM:inst|nextstate.B_227 ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|state~0         ; |TRISC_Controller|ControllerFSM:inst|state~0         ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|state~1         ; |TRISC_Controller|ControllerFSM:inst|state~1         ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|C0              ; |TRISC_Controller|ControllerFSM:inst|C0              ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|state.B~0       ; |TRISC_Controller|ControllerFSM:inst|state.B~0       ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|C3              ; |TRISC_Controller|ControllerFSM:inst|C3              ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|state.C~0       ; |TRISC_Controller|ControllerFSM:inst|state.C~0       ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|C4~2            ; |TRISC_Controller|ControllerFSM:inst|C4~2            ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|state.D~0       ; |TRISC_Controller|ControllerFSM:inst|state.D~0       ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|C4~4            ; |TRISC_Controller|ControllerFSM:inst|C4~4            ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|state.E~0       ; |TRISC_Controller|ControllerFSM:inst|state.E~0       ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|C2              ; |TRISC_Controller|ControllerFSM:inst|C2              ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|state.H~0       ; |TRISC_Controller|ControllerFSM:inst|state.H~0       ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|C1              ; |TRISC_Controller|ControllerFSM:inst|C1              ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|state~5         ; |TRISC_Controller|ControllerFSM:inst|state~5         ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|state~9         ; |TRISC_Controller|ControllerFSM:inst|state~9         ; out0             ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                           ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+; Node Name                                              ; Output Port Name                                       ; Output Port Type ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+; |TRISC_Controller|w                                    ; |TRISC_Controller|w                                    ; out              ;
+; |TRISC_Controller|x                                    ; |TRISC_Controller|x                                    ; out              ;
+; |TRISC_Controller|y                                    ; |TRISC_Controller|y                                    ; out              ;
+; |TRISC_Controller|z                                    ; |TRISC_Controller|z                                    ; out              ;
+; |TRISC_Controller|C8                                   ; |TRISC_Controller|C8                                   ; pin_out          ;
+; |TRISC_Controller|C9                                   ; |TRISC_Controller|C9                                   ; pin_out          ;
+; |TRISC_Controller|ControllerFSM:inst|state.G           ; |TRISC_Controller|ControllerFSM:inst|state.G           ; regout           ;
+; |TRISC_Controller|ControllerFSM:inst|state.F           ; |TRISC_Controller|ControllerFSM:inst|state.F           ; regout           ;
+; |TRISC_Controller|ControllerFSM:inst|comb~0            ; |TRISC_Controller|ControllerFSM:inst|comb~0            ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.E~0     ; |TRISC_Controller|ControllerFSM:inst|nextstate.E~0     ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|comb~1            ; |TRISC_Controller|ControllerFSM:inst|comb~1            ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.F_165   ; |TRISC_Controller|ControllerFSM:inst|nextstate.F_165   ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|comb~3            ; |TRISC_Controller|ControllerFSM:inst|comb~3            ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.G~0     ; |TRISC_Controller|ControllerFSM:inst|nextstate.G~0     ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.G_175   ; |TRISC_Controller|ControllerFSM:inst|nextstate.G_175   ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|comb~4            ; |TRISC_Controller|ControllerFSM:inst|comb~4            ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.A~0     ; |TRISC_Controller|ControllerFSM:inst|nextstate.A~0     ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.H~1     ; |TRISC_Controller|ControllerFSM:inst|nextstate.H~1     ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.E~1     ; |TRISC_Controller|ControllerFSM:inst|nextstate.E~1     ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.G~1     ; |TRISC_Controller|ControllerFSM:inst|nextstate.G~1     ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.F~0     ; |TRISC_Controller|ControllerFSM:inst|nextstate.F~0     ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|state.G~0         ; |TRISC_Controller|ControllerFSM:inst|state.G~0         ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|C8                ; |TRISC_Controller|ControllerFSM:inst|C8                ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|state.F~0         ; |TRISC_Controller|ControllerFSM:inst|state.F~0         ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|C9                ; |TRISC_Controller|ControllerFSM:inst|C9                ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|Selector0~0       ; |TRISC_Controller|ControllerFSM:inst|Selector0~0       ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|Selector2~0       ; |TRISC_Controller|ControllerFSM:inst|Selector2~0       ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|Selector5~0       ; |TRISC_Controller|ControllerFSM:inst|Selector5~0       ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|Selector7~0       ; |TRISC_Controller|ControllerFSM:inst|Selector7~0       ; out0             ;
+; |TRISC_Controller|Instruction_Decoder:inst1|Decoder0~0 ; |TRISC_Controller|Instruction_Decoder:inst1|Decoder0~0 ; out0             ;
+; |TRISC_Controller|Instruction_Decoder:inst1|Decoder0~1 ; |TRISC_Controller|Instruction_Decoder:inst1|Decoder0~1 ; out0             ;
+; |TRISC_Controller|Instruction_Decoder:inst1|Decoder0~2 ; |TRISC_Controller|Instruction_Decoder:inst1|Decoder0~2 ; out0             ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                           ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+; Node Name                                              ; Output Port Name                                       ; Output Port Type ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+; |TRISC_Controller|w                                    ; |TRISC_Controller|w                                    ; out              ;
+; |TRISC_Controller|x                                    ; |TRISC_Controller|x                                    ; out              ;
+; |TRISC_Controller|y                                    ; |TRISC_Controller|y                                    ; out              ;
+; |TRISC_Controller|z                                    ; |TRISC_Controller|z                                    ; out              ;
+; |TRISC_Controller|C8                                   ; |TRISC_Controller|C8                                   ; pin_out          ;
+; |TRISC_Controller|C9                                   ; |TRISC_Controller|C9                                   ; pin_out          ;
+; |TRISC_Controller|ControllerFSM:inst|state.G           ; |TRISC_Controller|ControllerFSM:inst|state.G           ; regout           ;
+; |TRISC_Controller|ControllerFSM:inst|state.F           ; |TRISC_Controller|ControllerFSM:inst|state.F           ; regout           ;
+; |TRISC_Controller|ControllerFSM:inst|comb~0            ; |TRISC_Controller|ControllerFSM:inst|comb~0            ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.E~0     ; |TRISC_Controller|ControllerFSM:inst|nextstate.E~0     ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|comb~1            ; |TRISC_Controller|ControllerFSM:inst|comb~1            ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.F_165   ; |TRISC_Controller|ControllerFSM:inst|nextstate.F_165   ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|comb~3            ; |TRISC_Controller|ControllerFSM:inst|comb~3            ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.G~0     ; |TRISC_Controller|ControllerFSM:inst|nextstate.G~0     ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.G_175   ; |TRISC_Controller|ControllerFSM:inst|nextstate.G_175   ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|comb~4            ; |TRISC_Controller|ControllerFSM:inst|comb~4            ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.A~0     ; |TRISC_Controller|ControllerFSM:inst|nextstate.A~0     ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.H~1     ; |TRISC_Controller|ControllerFSM:inst|nextstate.H~1     ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.E~1     ; |TRISC_Controller|ControllerFSM:inst|nextstate.E~1     ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.G~1     ; |TRISC_Controller|ControllerFSM:inst|nextstate.G~1     ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|nextstate.F~0     ; |TRISC_Controller|ControllerFSM:inst|nextstate.F~0     ; out              ;
+; |TRISC_Controller|ControllerFSM:inst|state.G~0         ; |TRISC_Controller|ControllerFSM:inst|state.G~0         ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|C8                ; |TRISC_Controller|ControllerFSM:inst|C8                ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|state.F~0         ; |TRISC_Controller|ControllerFSM:inst|state.F~0         ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|C9                ; |TRISC_Controller|ControllerFSM:inst|C9                ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|Selector0~0       ; |TRISC_Controller|ControllerFSM:inst|Selector0~0       ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|Selector2~0       ; |TRISC_Controller|ControllerFSM:inst|Selector2~0       ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|Selector5~0       ; |TRISC_Controller|ControllerFSM:inst|Selector5~0       ; out0             ;
+; |TRISC_Controller|ControllerFSM:inst|Selector7~0       ; |TRISC_Controller|ControllerFSM:inst|Selector7~0       ; out0             ;
+; |TRISC_Controller|Instruction_Decoder:inst1|Decoder0~0 ; |TRISC_Controller|Instruction_Decoder:inst1|Decoder0~0 ; out0             ;
+; |TRISC_Controller|Instruction_Decoder:inst1|Decoder0~1 ; |TRISC_Controller|Instruction_Decoder:inst1|Decoder0~1 ; out0             ;
+; |TRISC_Controller|Instruction_Decoder:inst1|Decoder0~2 ; |TRISC_Controller|Instruction_Decoder:inst1|Decoder0~2 ; out0             ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Nov 17 16:23:36 2020
+Info: Command: quartus_sim --simulation_results_format=VWF TRISC_Controller -c TRISC_Controller
+Info (324025): Using vector source file "C:/Users/14/Desktop/Khaled_CSE2441-001/TRISC_Controller/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      54.93 %
+Info (328052): Number of transitions in simulation is 187
+Info (324045): Vector file TRISC_Controller.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4448 megabytes
+    Info: Processing ended: Tue Nov 17 16:23:36 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

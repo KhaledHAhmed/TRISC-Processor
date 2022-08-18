@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'RAMclock'
+Slack : -2.564
+TNS   : -37.120
+
+Type  : Slow Model Setup '74112:inst10|8'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow Model Hold 'RAMclock'
+Slack : -3.435
+TNS   : -7.062
+
+Type  : Slow Model Hold '74112:inst10|8'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'RAMclock'
+Slack : -2.064
+TNS   : -122.403
+
+Type  : Slow Model Minimum Pulse Width '74112:inst10|8'
+Slack : -0.611
+TNS   : -4.888
+
+Type  : Fast Model Setup 'RAMclock'
+Slack : -1.460
+TNS   : -19.512
+
+Type  : Fast Model Setup '74112:inst10|8'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Fast Model Hold 'RAMclock'
+Slack : -1.665
+TNS   : -4.108
+
+Type  : Fast Model Hold '74112:inst10|8'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'RAMclock'
+Slack : -2.000
+TNS   : -118.222
+
+Type  : Fast Model Minimum Pulse Width '74112:inst10|8'
+Slack : -0.500
+TNS   : -4.000
+
+------------------------------------------------------------

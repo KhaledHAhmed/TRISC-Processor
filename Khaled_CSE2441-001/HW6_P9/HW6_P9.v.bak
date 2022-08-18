@@ -1,0 +1,15 @@
+module HW6_P9(
+	input x, CLK, CLR,
+	output z	);
+	reg state;
+	parameter A = 1'b1,B = 1'b0,C = 1'b1,D = 1'b0;
+	always @ (posedge CLK, negedge CLR)
+		if (CLR == 0) state <= A;
+		else case (state)
+						A: if (x) state <= B;else state <= A;
+						B: if (x) state <= B;else state <= C;
+						C: if (x) state <= B;else state <= D;
+						D: if (x) state <= B;else state <= A;
+		endcase
+	assign z = state;
+endmodule

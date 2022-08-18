@@ -1,0 +1,31 @@
+|Program_Counter
+Aout <= 74193:inst.QA
+D => 74193:inst.D
+C => 74193:inst.C
+B => 74193:inst.B
+A => 74193:inst.A
+Clear => inst3.IN0
+Increment => inst4.IN0
+Load => 74193:inst.LDN
+Bout <= 74193:inst.QB
+Cout <= 74193:inst.QC
+Dout <= 74193:inst.QD
+
+
+|Program_Counter|74193:inst
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+

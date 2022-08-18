@@ -1,0 +1,28 @@
+|Lab-5-FullAdder
+S <= FullAdder:inst.P
+A => FullAdder:inst.A
+A => A_out.DATAIN
+B => FullAdder:inst.B
+B => B_out.DATAIN
+C => FullAdder:inst.C
+C => C_out.DATAIN
+Cout <= FullAdder:inst.Q
+A_out <= A.DB_MAX_OUTPUT_PORT_TYPE
+B_out <= B.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab-5-FullAdder|FullAdder:inst
+P <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN0
+B => inst2.IN1
+C => inst1.IN1
+C => inst3.IN1
+C => inst5.IN1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+

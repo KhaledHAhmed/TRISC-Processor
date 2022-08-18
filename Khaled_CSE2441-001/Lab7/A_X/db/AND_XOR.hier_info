@@ -1,0 +1,43 @@
+|AND_XOR
+R3 <= 74157:inst.Y4
+A0 => inst9.IN0
+A0 => inst5.IN1
+B0 => inst9.IN1
+B0 => inst5.IN0
+S0 => 74157:inst.SEL
+B1 => inst3.IN0
+B1 => inst8.IN1
+A1 => inst3.IN1
+A1 => inst8.IN0
+A2 => inst6.IN0
+A2 => inst2.IN1
+B2 => inst6.IN1
+B2 => inst2.IN0
+B3 => inst4.IN0
+B3 => inst7.IN1
+A3 => inst4.IN1
+A3 => inst7.IN0
+R2 <= 74157:inst.Y3
+R1 <= 74157:inst.Y2
+R0 <= 74157:inst.Y1
+
+
+|AND_XOR|74157:inst
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+

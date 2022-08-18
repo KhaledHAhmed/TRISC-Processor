@@ -1,0 +1,50 @@
+|Register7474
+Dout <= 7474:inst.1Q
+C => 7474:inst.2D
+Preset => 7474:inst.2PRN
+Preset => 7474:inst.1PRN
+Preset => 7474:inst2.2PRN
+Preset => 7474:inst2.1PRN
+Clock => inst3.IN0
+D => 7474:inst.1D
+Clear => 7474:inst.2CLRN
+Clear => 7474:inst.1CLRN
+Clear => 7474:inst2.2CLRN
+Clear => 7474:inst2.1CLRN
+Cout <= 7474:inst.2Q
+Bout <= 7474:inst2.1Q
+A => 7474:inst2.2D
+B => 7474:inst2.1D
+Aout <= 7474:inst2.2Q
+
+
+|Register7474|7474:inst
+1Q <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1CLRN => 9.ACLR
+1CLK => 9.CLK
+1D => 9.DATAIN
+1PRN => 9.PRESET
+1QN <= 16.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2CLRN => 10.ACLR
+2CLK => 10.CLK
+2D => 10.DATAIN
+2PRN => 10.PRESET
+2QN <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register7474|7474:inst2
+1Q <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1CLRN => 9.ACLR
+1CLK => 9.CLK
+1D => 9.DATAIN
+1PRN => 9.PRESET
+1QN <= 16.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2CLRN => 10.ACLR
+2CLK => 10.CLK
+2D => 10.DATAIN
+2PRN => 10.PRESET
+2QN <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+

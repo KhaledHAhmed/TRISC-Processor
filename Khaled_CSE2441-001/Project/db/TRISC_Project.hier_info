@@ -1,0 +1,743 @@
+|TRISC_Project
+a0 <= Binary2sevenS:inst4.a
+Clock => LAB12TRISC:inst2.Clock
+Clock => inst999.IN1
+Start/Stop => LAB12TRISC:inst2.Start/Stop
+b0 <= Binary2sevenS:inst4.b
+d0 <= Binary2sevenS:inst4.d
+e0 <= Binary2sevenS:inst4.e
+f0 <= Binary2sevenS:inst4.f
+g0 <= Binary2sevenS:inst4.g
+a1 <= Binary2sevenS:inst10.a
+b1 <= Binary2sevenS:inst10.b
+d1 <= Binary2sevenS:inst10.d
+e1 <= Binary2sevenS:inst10.e
+f1 <= Binary2sevenS:inst10.f
+g1 <= Binary2sevenS:inst10.g
+a2 <= Binary2sevenS:inst11.a
+b2 <= Binary2sevenS:inst11.b
+d2 <= Binary2sevenS:inst11.d
+e2 <= Binary2sevenS:inst11.e
+f2 <= Binary2sevenS:inst11.f
+g2 <= Binary2sevenS:inst11.g
+a3 <= Binary2sevenS:inst12.a
+b3 <= Binary2sevenS:inst12.b
+d3 <= Binary2sevenS:inst12.d
+e3 <= Binary2sevenS:inst12.e
+f3 <= Binary2sevenS:inst12.f
+g3 <= Binary2sevenS:inst12.g
+c00 <= Binary2sevenS:inst4.c
+c22 <= Binary2sevenS:inst11.c
+c33 <= Binary2sevenS:inst12.c
+c122 <= Binary2sevenS:inst10.c
+Dout0 <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+Dout1 <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+Dout2 <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+Dout3 <= C[3].DB_MAX_OUTPUT_PORT_TYPE
+Dout4 <= C[4].DB_MAX_OUTPUT_PORT_TYPE
+Dout5 <= C[5].DB_MAX_OUTPUT_PORT_TYPE
+Dout7 <= C[7].DB_MAX_OUTPUT_PORT_TYPE
+Dout12 <= C[12].DB_MAX_OUTPUT_PORT_TYPE
+Dout14 <= C[14].DB_MAX_OUTPUT_PORT_TYPE
+Dout13 <= C[13].DB_MAX_OUTPUT_PORT_TYPE
+Dout8 <= C[8].DB_MAX_OUTPUT_PORT_TYPE
+Dout9 <= C[9].DB_MAX_OUTPUT_PORT_TYPE
+Dout10 <= C[10].DB_MAX_OUTPUT_PORT_TYPE
+Dout11 <= C[11].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|Binary2sevenS:inst4
+w => Decoder0.IN0
+x => Decoder0.IN1
+y => Decoder0.IN2
+z => Decoder0.IN3
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|Program_Counter:inst7
+Aout <= 74193:inst.QA
+D => 74193:inst.D
+C => 74193:inst.C
+B => 74193:inst.B
+A => 74193:inst.A
+Clear => 74193:inst.CLR
+Increment => 74193:inst.UP
+Load => inst5.IN0
+Bout <= 74193:inst.QB
+Cout <= 74193:inst.QC
+Dout <= 74193:inst.QD
+
+
+|TRISC_Project|Program_Counter:inst7|74193:inst
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|LAB12TRISC:inst2
+C0 <= TRISC:inst1.C0
+Clock => TRISC:inst1.SysClock
+Start/Stop => TRISC:inst1.StartStop
+W => Instruction_Decoder:inst.w
+X => Instruction_Decoder:inst.x
+Y => Instruction_Decoder:inst.y
+Z => Instruction_Decoder:inst.z
+C1 <= TRISC:inst1.C1
+C2 <= TRISC:inst1.C2
+C3 <= TRISC:inst1.C3
+C4 <= TRISC:inst1.C4
+C5 <= TRISC:inst1.C5
+C7 <= TRISC:inst1.C7
+C8 <= TRISC:inst1.C8
+C9 <= TRISC:inst1.C9
+C10 <= TRISC:inst1.C10
+C11 <= TRISC:inst1.C11
+C12 <= TRISC:inst1.C12
+C13 <= TRISC:inst1.C13
+C14 <= TRISC:inst1.C14
+
+
+|TRISC_Project|LAB12TRISC:inst2|TRISC:inst1
+SysClock => state~1.DATAIN
+StartStop => state~3.DATAIN
+INC => nextstate.OUTPUTSELECT
+INC => nextstate.OUTPUTSELECT
+INC => nextstate.OUTPUTSELECT
+INC => nextstate.OUTPUTSELECT
+INC => nextstate.OUTPUTSELECT
+INC => nextstate.OUTPUTSELECT
+INC => nextstate.F.DATAB
+CLR => nextstate.OUTPUTSELECT
+CLR => nextstate.OUTPUTSELECT
+CLR => nextstate.OUTPUTSELECT
+CLR => nextstate.OUTPUTSELECT
+CLR => nextstate.OUTPUTSELECT
+CLR => nextstate.DATAA
+JMP => nextstate.OUTPUTSELECT
+JMP => nextstate.OUTPUTSELECT
+JMP => nextstate.OUTPUTSELECT
+JMP => nextstate.OUTPUTSELECT
+JMP => nextstate.DATAA
+LDA => nextstate.OUTPUTSELECT
+LDA => nextstate.OUTPUTSELECT
+LDA => nextstate.DATAA
+STA => nextstate.OUTPUTSELECT
+STA => nextstate.OUTPUTSELECT
+STA => nextstate.OUTPUTSELECT
+STA => nextstate.DATAA
+ADD => nextstate.DATAA
+ADD => nextstate.DATAA
+C0 <= C0.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= C1.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= C7.DB_MAX_OUTPUT_PORT_TYPE
+C3 <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+C4 <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C5 <= C5.DB_MAX_OUTPUT_PORT_TYPE
+C7 <= C7.DB_MAX_OUTPUT_PORT_TYPE
+C8 <= C8.DB_MAX_OUTPUT_PORT_TYPE
+C9 <= C9.DB_MAX_OUTPUT_PORT_TYPE
+C10 <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+C11 <= C11.DB_MAX_OUTPUT_PORT_TYPE
+C12 <= <GND>
+C13 <= <GND>
+C14 <= C14.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|LAB12TRISC:inst2|Instruction_Decoder:inst
+w => Decoder0.IN0
+x => Decoder0.IN1
+y => Decoder0.IN2
+z => Decoder0.IN3
+HLT <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JPN <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JPZ <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+JMP <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+CLR <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+INC <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+XOR <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+SUB <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ADD <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+SAT <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+LDA <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|Instruction_Register:inst
+IR3out <= 74175:inst.1Q
+Clock => 74175:inst.CLK
+IR1 => 74175:inst.3D
+IR2 => 74175:inst.2D
+IR3 => 74175:inst.1D
+IR0 => 74175:inst.4D
+IR2out <= 74175:inst.2Q
+IR1out <= 74175:inst.3Q
+IR0out <= 74175:inst.4Q
+
+
+|TRISC_Project|Instruction_Register:inst|74175:inst
+1Q <= 16.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 16.ACLR
+CLRN => 15.ACLR
+CLRN => 14.ACLR
+CLRN => 13.ACLR
+CLK => 16.CLK
+CLK => 15.CLK
+CLK => 14.CLK
+CLK => 13.CLK
+1D => 16.DATAIN
+1QN <= 1.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= 15.DB_MAX_OUTPUT_PORT_TYPE
+2D => 15.DATAIN
+2QN <= 2.DB_MAX_OUTPUT_PORT_TYPE
+3Q <= 14.DB_MAX_OUTPUT_PORT_TYPE
+3D => 14.DATAIN
+3QN <= 3.DB_MAX_OUTPUT_PORT_TYPE
+4Q <= 13.DB_MAX_OUTPUT_PORT_TYPE
+4D => 13.DATAIN
+4QN <= 4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|TRISCRAMfall2020:inst99
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+clock => clock.IN1
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+data[2] => data[2].IN1
+data[3] => data[3].IN1
+data[4] => data[4].IN1
+data[5] => data[5].IN1
+data[6] => data[6].IN1
+data[7] => data[7].IN1
+wren => wren.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+q[1] <= altsyncram:altsyncram_component.q_a
+q[2] <= altsyncram:altsyncram_component.q_a
+q[3] <= altsyncram:altsyncram_component.q_a
+q[4] <= altsyncram:altsyncram_component.q_a
+q[5] <= altsyncram:altsyncram_component.q_a
+q[6] <= altsyncram:altsyncram_component.q_a
+q[7] <= altsyncram:altsyncram_component.q_a
+
+
+|TRISC_Project|TRISCRAMfall2020:inst99|altsyncram:altsyncram_component
+wren_a => altsyncram_7vc1:auto_generated.wren_a
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => altsyncram_7vc1:auto_generated.data_a[0]
+data_a[1] => altsyncram_7vc1:auto_generated.data_a[1]
+data_a[2] => altsyncram_7vc1:auto_generated.data_a[2]
+data_a[3] => altsyncram_7vc1:auto_generated.data_a[3]
+data_a[4] => altsyncram_7vc1:auto_generated.data_a[4]
+data_a[5] => altsyncram_7vc1:auto_generated.data_a[5]
+data_a[6] => altsyncram_7vc1:auto_generated.data_a[6]
+data_a[7] => altsyncram_7vc1:auto_generated.data_a[7]
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_7vc1:auto_generated.address_a[0]
+address_a[1] => altsyncram_7vc1:auto_generated.address_a[1]
+address_a[2] => altsyncram_7vc1:auto_generated.address_a[2]
+address_a[3] => altsyncram_7vc1:auto_generated.address_a[3]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_7vc1:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_7vc1:auto_generated.q_a[0]
+q_a[1] <= altsyncram_7vc1:auto_generated.q_a[1]
+q_a[2] <= altsyncram_7vc1:auto_generated.q_a[2]
+q_a[3] <= altsyncram_7vc1:auto_generated.q_a[3]
+q_a[4] <= altsyncram_7vc1:auto_generated.q_a[4]
+q_a[5] <= altsyncram_7vc1:auto_generated.q_a[5]
+q_a[6] <= altsyncram_7vc1:auto_generated.q_a[6]
+q_a[7] <= altsyncram_7vc1:auto_generated.q_a[7]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|TRISC_Project|TRISCRAMfall2020:inst99|altsyncram:altsyncram_component|altsyncram_7vc1:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[0] => ram_block1a1.PORTAADDR
+address_a[0] => ram_block1a2.PORTAADDR
+address_a[0] => ram_block1a3.PORTAADDR
+address_a[0] => ram_block1a4.PORTAADDR
+address_a[0] => ram_block1a5.PORTAADDR
+address_a[0] => ram_block1a6.PORTAADDR
+address_a[0] => ram_block1a7.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[1] => ram_block1a1.PORTAADDR1
+address_a[1] => ram_block1a2.PORTAADDR1
+address_a[1] => ram_block1a3.PORTAADDR1
+address_a[1] => ram_block1a4.PORTAADDR1
+address_a[1] => ram_block1a5.PORTAADDR1
+address_a[1] => ram_block1a6.PORTAADDR1
+address_a[1] => ram_block1a7.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[2] => ram_block1a1.PORTAADDR2
+address_a[2] => ram_block1a2.PORTAADDR2
+address_a[2] => ram_block1a3.PORTAADDR2
+address_a[2] => ram_block1a4.PORTAADDR2
+address_a[2] => ram_block1a5.PORTAADDR2
+address_a[2] => ram_block1a6.PORTAADDR2
+address_a[2] => ram_block1a7.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[3] => ram_block1a1.PORTAADDR3
+address_a[3] => ram_block1a2.PORTAADDR3
+address_a[3] => ram_block1a3.PORTAADDR3
+address_a[3] => ram_block1a4.PORTAADDR3
+address_a[3] => ram_block1a5.PORTAADDR3
+address_a[3] => ram_block1a6.PORTAADDR3
+address_a[3] => ram_block1a7.PORTAADDR3
+clock0 => ram_block1a0.CLK0
+clock0 => ram_block1a1.CLK0
+clock0 => ram_block1a2.CLK0
+clock0 => ram_block1a3.CLK0
+clock0 => ram_block1a4.CLK0
+clock0 => ram_block1a5.CLK0
+clock0 => ram_block1a6.CLK0
+clock0 => ram_block1a7.CLK0
+data_a[0] => ram_block1a0.PORTADATAIN
+data_a[1] => ram_block1a1.PORTADATAIN
+data_a[2] => ram_block1a2.PORTADATAIN
+data_a[3] => ram_block1a3.PORTADATAIN
+data_a[4] => ram_block1a4.PORTADATAIN
+data_a[5] => ram_block1a5.PORTADATAIN
+data_a[6] => ram_block1a6.PORTADATAIN
+data_a[7] => ram_block1a7.PORTADATAIN
+q_a[0] <= ram_block1a0.PORTADATAOUT
+q_a[1] <= ram_block1a1.PORTADATAOUT
+q_a[2] <= ram_block1a2.PORTADATAOUT
+q_a[3] <= ram_block1a3.PORTADATAOUT
+q_a[4] <= ram_block1a4.PORTADATAOUT
+q_a[5] <= ram_block1a5.PORTADATAOUT
+q_a[6] <= ram_block1a6.PORTADATAOUT
+q_a[7] <= ram_block1a7.PORTADATAOUT
+wren_a => ram_block1a0.PORTAWE
+wren_a => ram_block1a1.PORTAWE
+wren_a => ram_block1a2.PORTAWE
+wren_a => ram_block1a3.PORTAWE
+wren_a => ram_block1a4.PORTAWE
+wren_a => ram_block1a5.PORTAWE
+wren_a => ram_block1a6.PORTAWE
+wren_a => ram_block1a7.PORTAWE
+
+
+|TRISC_Project|BUSMUX:inst1
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+
+
+|TRISC_Project|BUSMUX:inst1|lpm_mux:$00000
+data[0][0] => mux_omc:auto_generated.data[0]
+data[0][1] => mux_omc:auto_generated.data[1]
+data[0][2] => mux_omc:auto_generated.data[2]
+data[0][3] => mux_omc:auto_generated.data[3]
+data[1][0] => mux_omc:auto_generated.data[4]
+data[1][1] => mux_omc:auto_generated.data[5]
+data[1][2] => mux_omc:auto_generated.data[6]
+data[1][3] => mux_omc:auto_generated.data[7]
+sel[0] => mux_omc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_omc:auto_generated.result[0]
+result[1] <= mux_omc:auto_generated.result[1]
+result[2] <= mux_omc:auto_generated.result[2]
+result[3] <= mux_omc:auto_generated.result[3]
+
+
+|TRISC_Project|BUSMUX:inst1|lpm_mux:$00000|mux_omc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|TRISC_Project|Accumulater:inst6
+AC3out <= Counter:inst2.Dout
+Load => Counter:inst2.Load
+ALU0 => 74157:inst.A1
+MDR0 => 74157:inst.B1
+ALU/MDR => 74157:inst.SEL
+MDR1 => 74157:inst.B2
+ALU2 => 74157:inst.A3
+MDR2 => 74157:inst.B3
+ALU1 => 74157:inst.A2
+MDR3 => 74157:inst.B4
+ALU3 => 74157:inst.A4
+Increment => Counter:inst2.Increment
+Clear => Counter:inst2.Clear
+AC2out <= Counter:inst2.Cout
+AC0out <= Counter:inst2.Aout
+AC1out <= Counter:inst2.Bout
+
+
+|TRISC_Project|Accumulater:inst6|Counter:inst2
+Aout <= 74193:inst.QA
+D => 74193:inst.D
+C => 74193:inst.C
+B => 74193:inst.B
+A => 74193:inst.A
+Clear => 74193:inst.CLR
+Increment => 74193:inst.UP
+Load => inst1.IN0
+Bout <= 74193:inst.QB
+Cout <= 74193:inst.QC
+Dout <= 74193:inst.QD
+
+
+|TRISC_Project|Accumulater:inst6|Counter:inst2|74193:inst
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|Accumulater:inst6|74157:inst
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|TRISC_Project|Buffer_Register:inst9
+R3out <= 74175:inst.1Q
+Clock => 74175:inst.CLK
+R1 => 74175:inst.3D
+R2 => 74175:inst.2D
+R3 => 74175:inst.1D
+R0 => 74175:inst.4D
+R2out <= 74175:inst.2Q
+R1out <= 74175:inst.3Q
+R0out <= 74175:inst.4Q
+
+
+|TRISC_Project|Buffer_Register:inst9|74175:inst
+1Q <= 16.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 16.ACLR
+CLRN => 15.ACLR
+CLRN => 14.ACLR
+CLRN => 13.ACLR
+CLK => 16.CLK
+CLK => 15.CLK
+CLK => 14.CLK
+CLK => 13.CLK
+1D => 16.DATAIN
+1QN <= 1.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= 15.DB_MAX_OUTPUT_PORT_TYPE
+2D => 15.DATAIN
+2QN <= 2.DB_MAX_OUTPUT_PORT_TYPE
+3Q <= 14.DB_MAX_OUTPUT_PORT_TYPE
+3D => 14.DATAIN
+3QN <= 3.DB_MAX_OUTPUT_PORT_TYPE
+4Q <= 13.DB_MAX_OUTPUT_PORT_TYPE
+4D => 13.DATAIN
+4QN <= 4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|ALU:inst5
+R0 <= 74157:inst3.Y1
+S0 => Adder_Subtractor:inst2.S0
+S0 => AND_XOR:inst.S0
+B0 => Adder_Subtractor:inst2.B0
+B0 => AND_XOR:inst.B0
+B1 => Adder_Subtractor:inst2.B1
+B1 => AND_XOR:inst.B1
+B2 => Adder_Subtractor:inst2.B2
+B2 => AND_XOR:inst.B2
+B3 => Adder_Subtractor:inst2.B3
+B3 => AND_XOR:inst.B3
+A0 => Adder_Subtractor:inst2.A0
+A0 => AND_XOR:inst.A0
+A1 => Adder_Subtractor:inst2.A1
+A1 => AND_XOR:inst.A1
+A2 => Adder_Subtractor:inst2.A2
+A2 => AND_XOR:inst.A2
+A3 => Adder_Subtractor:inst2.A3
+A3 => AND_XOR:inst.A3
+S1 => 74157:inst3.SEL
+R1 <= 74157:inst3.Y2
+R2 <= 74157:inst3.Y3
+R3 <= 74157:inst3.Y4
+OVR <= Adder_Subtractor:inst2.OVR
+Cout <= Adder_Subtractor:inst2.Cout
+
+
+|TRISC_Project|ALU:inst5|74157:inst3
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|TRISC_Project|ALU:inst5|Adder_Subtractor:inst2
+Cout <= RippleCarryAdder:inst.S4
+A0 => RippleCarryAdder:inst.A0
+S0 => inst2.IN0
+S0 => RippleCarryAdder:inst.C0
+S0 => inst3.IN0
+S0 => inst4.IN0
+S0 => inst5.IN0
+B0 => inst2.IN1
+A1 => RippleCarryAdder:inst.A1
+B1 => inst3.IN1
+A2 => RippleCarryAdder:inst.A2
+B2 => inst4.IN1
+A3 => RippleCarryAdder:inst.A3
+A3 => inst10.IN0
+A3 => inst6.IN1
+B3 => inst5.IN1
+R3 <= RippleCarryAdder:inst.S3
+R2 <= RippleCarryAdder:inst.S2
+R1 <= RippleCarryAdder:inst.S1
+R0 <= RippleCarryAdder:inst.S0
+OVR <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|ALU:inst5|Adder_Subtractor:inst2|RippleCarryAdder:inst
+S0 <= FullAdder:inst8.P
+A0 => FullAdder:inst8.A
+B0 => FullAdder:inst8.B
+C0 => FullAdder:inst8.C
+S1 <= FullAdder:inst7.P
+A1 => FullAdder:inst7.A
+B1 => FullAdder:inst7.B
+S2 <= FullAdder:inst6.P
+A2 => FullAdder:inst6.A
+B2 => FullAdder:inst6.B
+S3 <= FullAdder:inst9.P
+A3 => FullAdder:inst9.A
+B3 => FullAdder:inst9.B
+S4 <= FullAdder:inst9.Q
+
+
+|TRISC_Project|ALU:inst5|Adder_Subtractor:inst2|RippleCarryAdder:inst|FullAdder:inst8
+P <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN0
+B => inst2.IN1
+C => inst1.IN1
+C => inst3.IN1
+C => inst5.IN1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|ALU:inst5|Adder_Subtractor:inst2|RippleCarryAdder:inst|FullAdder:inst7
+P <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN0
+B => inst2.IN1
+C => inst1.IN1
+C => inst3.IN1
+C => inst5.IN1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|ALU:inst5|Adder_Subtractor:inst2|RippleCarryAdder:inst|FullAdder:inst6
+P <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN0
+B => inst2.IN1
+C => inst1.IN1
+C => inst3.IN1
+C => inst5.IN1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|ALU:inst5|Adder_Subtractor:inst2|RippleCarryAdder:inst|FullAdder:inst9
+P <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst5.IN0
+B => inst2.IN1
+C => inst1.IN1
+C => inst3.IN1
+C => inst5.IN1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|ALU:inst5|AND_XOR:inst
+R3 <= 74157:inst.Y4
+A0 => inst9.IN0
+A0 => inst5.IN1
+B0 => inst9.IN1
+B0 => inst5.IN0
+S0 => 74157:inst.SEL
+B1 => inst3.IN0
+B1 => inst8.IN1
+A1 => inst3.IN1
+A1 => inst8.IN0
+A2 => inst6.IN0
+A2 => inst2.IN1
+B2 => inst6.IN1
+B2 => inst2.IN0
+B3 => inst4.IN0
+B3 => inst7.IN1
+A3 => inst4.IN1
+A3 => inst7.IN0
+R2 <= 74157:inst.Y3
+R1 <= 74157:inst.Y2
+R0 <= 74157:inst.Y1
+
+
+|TRISC_Project|ALU:inst5|AND_XOR:inst|74157:inst
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|TRISC_Project|Binary2sevenS:inst10
+w => Decoder0.IN0
+x => Decoder0.IN1
+y => Decoder0.IN2
+z => Decoder0.IN3
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|Binary2sevenS:inst11
+w => Decoder0.IN0
+x => Decoder0.IN1
+y => Decoder0.IN2
+z => Decoder0.IN3
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRISC_Project|Binary2sevenS:inst12
+w => Decoder0.IN0
+x => Decoder0.IN1
+y => Decoder0.IN2
+z => Decoder0.IN3
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+

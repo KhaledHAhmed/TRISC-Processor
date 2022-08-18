@@ -1,0 +1,257 @@
+Simulator report for ControllerFSM
+Tue Nov 17 16:19:03 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 67 nodes     ;
+; Simulation Coverage         ;      58.21 % ;
+; Total Number of Transitions ; 187          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                        ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                              ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                               ;               ;
+; Vector input source                                                                        ; C:/Users/14/Desktop/Khaled_CSE2441-001/ControllerFSM/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                ; On            ;
+; Check outputs                                                                              ; Off                                                               ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                               ; Off           ;
+; Detect glitches                                                                            ; Off                                                               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                               ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      58.21 % ;
+; Total nodes checked                                 ; 67           ;
+; Total output ports checked                          ; 67           ;
+; Total output ports with complete 1/0-value coverage ; 39           ;
+; Total output ports with no 1/0-value coverage       ; 28           ;
+; Total output ports with no 1-value coverage         ; 28           ;
+; Total output ports with no 0-value coverage         ; 28           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                        ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |ControllerFSM|nextstate.E_188 ; |ControllerFSM|nextstate.E_188 ; out              ;
+; |ControllerFSM|state.A         ; |ControllerFSM|state.A         ; regout           ;
+; |ControllerFSM|state.B         ; |ControllerFSM|state.B         ; regout           ;
+; |ControllerFSM|state.C         ; |ControllerFSM|state.C         ; regout           ;
+; |ControllerFSM|state.D         ; |ControllerFSM|state.D         ; regout           ;
+; |ControllerFSM|state.E         ; |ControllerFSM|state.E         ; regout           ;
+; |ControllerFSM|state.H         ; |ControllerFSM|state.H         ; regout           ;
+; |ControllerFSM|nextstate.H_155 ; |ControllerFSM|nextstate.H_155 ; out              ;
+; |ControllerFSM|comb~2          ; |ControllerFSM|comb~2          ; out0             ;
+; |ControllerFSM|nextstate.D_201 ; |ControllerFSM|nextstate.D_201 ; out              ;
+; |ControllerFSM|comb~5          ; |ControllerFSM|comb~5          ; out0             ;
+; |ControllerFSM|nextstate.C_214 ; |ControllerFSM|nextstate.C_214 ; out              ;
+; |ControllerFSM|C4~0            ; |ControllerFSM|C4~0            ; out0             ;
+; |ControllerFSM|nextstate.H~0   ; |ControllerFSM|nextstate.H~0   ; out              ;
+; |ControllerFSM|WideOr0         ; |ControllerFSM|WideOr0         ; out0             ;
+; |ControllerFSM|nextstate.B_227 ; |ControllerFSM|nextstate.B_227 ; out              ;
+; |ControllerFSM|SysClock        ; |ControllerFSM|SysClock        ; out              ;
+; |ControllerFSM|StartStop       ; |ControllerFSM|StartStop       ; out              ;
+; |ControllerFSM|C0              ; |ControllerFSM|C0              ; pin_out          ;
+; |ControllerFSM|C1              ; |ControllerFSM|C1              ; pin_out          ;
+; |ControllerFSM|C2              ; |ControllerFSM|C2              ; pin_out          ;
+; |ControllerFSM|C3              ; |ControllerFSM|C3              ; pin_out          ;
+; |ControllerFSM|C4              ; |ControllerFSM|C4              ; pin_out          ;
+; |ControllerFSM|C7              ; |ControllerFSM|C7              ; pin_out          ;
+; |ControllerFSM|state~0         ; |ControllerFSM|state~0         ; out0             ;
+; |ControllerFSM|state~1         ; |ControllerFSM|state~1         ; out0             ;
+; |ControllerFSM|C0~0            ; |ControllerFSM|C0~0            ; out0             ;
+; |ControllerFSM|state.B~0       ; |ControllerFSM|state.B~0       ; out0             ;
+; |ControllerFSM|C3~0            ; |ControllerFSM|C3~0            ; out0             ;
+; |ControllerFSM|state.C~0       ; |ControllerFSM|state.C~0       ; out0             ;
+; |ControllerFSM|C4~2            ; |ControllerFSM|C4~2            ; out0             ;
+; |ControllerFSM|state.D~0       ; |ControllerFSM|state.D~0       ; out0             ;
+; |ControllerFSM|C4~4            ; |ControllerFSM|C4~4            ; out0             ;
+; |ControllerFSM|state.E~0       ; |ControllerFSM|state.E~0       ; out0             ;
+; |ControllerFSM|C7~0            ; |ControllerFSM|C7~0            ; out0             ;
+; |ControllerFSM|state.H~0       ; |ControllerFSM|state.H~0       ; out0             ;
+; |ControllerFSM|C1~0            ; |ControllerFSM|C1~0            ; out0             ;
+; |ControllerFSM|state~5         ; |ControllerFSM|state~5         ; out0             ;
+; |ControllerFSM|state~9         ; |ControllerFSM|state~9         ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |ControllerFSM|state.G         ; |ControllerFSM|state.G         ; regout           ;
+; |ControllerFSM|state.F         ; |ControllerFSM|state.F         ; regout           ;
+; |ControllerFSM|comb~0          ; |ControllerFSM|comb~0          ; out0             ;
+; |ControllerFSM|nextstate.E~0   ; |ControllerFSM|nextstate.E~0   ; out0             ;
+; |ControllerFSM|comb~1          ; |ControllerFSM|comb~1          ; out0             ;
+; |ControllerFSM|nextstate.F_165 ; |ControllerFSM|nextstate.F_165 ; out              ;
+; |ControllerFSM|comb~3          ; |ControllerFSM|comb~3          ; out0             ;
+; |ControllerFSM|nextstate.G~0   ; |ControllerFSM|nextstate.G~0   ; out              ;
+; |ControllerFSM|nextstate.G_175 ; |ControllerFSM|nextstate.G_175 ; out              ;
+; |ControllerFSM|comb~4          ; |ControllerFSM|comb~4          ; out0             ;
+; |ControllerFSM|nextstate.A~0   ; |ControllerFSM|nextstate.A~0   ; out0             ;
+; |ControllerFSM|nextstate.H~1   ; |ControllerFSM|nextstate.H~1   ; out              ;
+; |ControllerFSM|nextstate.E~1   ; |ControllerFSM|nextstate.E~1   ; out0             ;
+; |ControllerFSM|nextstate.G~1   ; |ControllerFSM|nextstate.G~1   ; out              ;
+; |ControllerFSM|nextstate.F~0   ; |ControllerFSM|nextstate.F~0   ; out              ;
+; |ControllerFSM|INC             ; |ControllerFSM|INC             ; out              ;
+; |ControllerFSM|CLR             ; |ControllerFSM|CLR             ; out              ;
+; |ControllerFSM|JMP             ; |ControllerFSM|JMP             ; out              ;
+; |ControllerFSM|C8              ; |ControllerFSM|C8              ; pin_out          ;
+; |ControllerFSM|C9              ; |ControllerFSM|C9              ; pin_out          ;
+; |ControllerFSM|state.G~0       ; |ControllerFSM|state.G~0       ; out0             ;
+; |ControllerFSM|C8~0            ; |ControllerFSM|C8~0            ; out0             ;
+; |ControllerFSM|state.F~0       ; |ControllerFSM|state.F~0       ; out0             ;
+; |ControllerFSM|C9~0            ; |ControllerFSM|C9~0            ; out0             ;
+; |ControllerFSM|Selector0~0     ; |ControllerFSM|Selector0~0     ; out0             ;
+; |ControllerFSM|Selector2~0     ; |ControllerFSM|Selector2~0     ; out0             ;
+; |ControllerFSM|Selector5~0     ; |ControllerFSM|Selector5~0     ; out0             ;
+; |ControllerFSM|Selector7~0     ; |ControllerFSM|Selector7~0     ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |ControllerFSM|state.G         ; |ControllerFSM|state.G         ; regout           ;
+; |ControllerFSM|state.F         ; |ControllerFSM|state.F         ; regout           ;
+; |ControllerFSM|comb~0          ; |ControllerFSM|comb~0          ; out0             ;
+; |ControllerFSM|nextstate.E~0   ; |ControllerFSM|nextstate.E~0   ; out0             ;
+; |ControllerFSM|comb~1          ; |ControllerFSM|comb~1          ; out0             ;
+; |ControllerFSM|nextstate.F_165 ; |ControllerFSM|nextstate.F_165 ; out              ;
+; |ControllerFSM|comb~3          ; |ControllerFSM|comb~3          ; out0             ;
+; |ControllerFSM|nextstate.G~0   ; |ControllerFSM|nextstate.G~0   ; out              ;
+; |ControllerFSM|nextstate.G_175 ; |ControllerFSM|nextstate.G_175 ; out              ;
+; |ControllerFSM|comb~4          ; |ControllerFSM|comb~4          ; out0             ;
+; |ControllerFSM|nextstate.A~0   ; |ControllerFSM|nextstate.A~0   ; out0             ;
+; |ControllerFSM|nextstate.H~1   ; |ControllerFSM|nextstate.H~1   ; out              ;
+; |ControllerFSM|nextstate.E~1   ; |ControllerFSM|nextstate.E~1   ; out0             ;
+; |ControllerFSM|nextstate.G~1   ; |ControllerFSM|nextstate.G~1   ; out              ;
+; |ControllerFSM|nextstate.F~0   ; |ControllerFSM|nextstate.F~0   ; out              ;
+; |ControllerFSM|INC             ; |ControllerFSM|INC             ; out              ;
+; |ControllerFSM|CLR             ; |ControllerFSM|CLR             ; out              ;
+; |ControllerFSM|JMP             ; |ControllerFSM|JMP             ; out              ;
+; |ControllerFSM|C8              ; |ControllerFSM|C8              ; pin_out          ;
+; |ControllerFSM|C9              ; |ControllerFSM|C9              ; pin_out          ;
+; |ControllerFSM|state.G~0       ; |ControllerFSM|state.G~0       ; out0             ;
+; |ControllerFSM|C8~0            ; |ControllerFSM|C8~0            ; out0             ;
+; |ControllerFSM|state.F~0       ; |ControllerFSM|state.F~0       ; out0             ;
+; |ControllerFSM|C9~0            ; |ControllerFSM|C9~0            ; out0             ;
+; |ControllerFSM|Selector0~0     ; |ControllerFSM|Selector0~0     ; out0             ;
+; |ControllerFSM|Selector2~0     ; |ControllerFSM|Selector2~0     ; out0             ;
+; |ControllerFSM|Selector5~0     ; |ControllerFSM|Selector5~0     ; out0             ;
+; |ControllerFSM|Selector7~0     ; |ControllerFSM|Selector7~0     ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Nov 17 16:19:02 2020
+Info: Command: quartus_sim --simulation_results_format=VWF ControllerFSM -c ControllerFSM
+Info (324025): Using vector source file "C:/Users/14/Desktop/Khaled_CSE2441-001/ControllerFSM/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      58.21 %
+Info (328052): Number of transitions in simulation is 187
+Info (324045): Vector file ControllerFSM.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4448 megabytes
+    Info: Processing ended: Tue Nov 17 16:19:03 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

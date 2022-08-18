@@ -1,0 +1,618 @@
+Analysis & Synthesis report for TRISC_Project
+Sun Nov 29 13:38:19 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. State Machine - |TRISC_Project|LAB12TRISC:inst2|TRISC:inst1|state
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Source assignments for TRISCRAMfall2020:inst99|altsyncram:altsyncram_component|altsyncram_7vc1:auto_generated
+ 14. Parameter Settings for User Entity Instance: LAB12TRISC:inst2|TRISC:inst1
+ 15. Parameter Settings for User Entity Instance: TRISCRAMfall2020:inst99|altsyncram:altsyncram_component
+ 16. Parameter Settings for User Entity Instance: BUSMUX:inst1
+ 17. altsyncram Parameter Settings by Entity Instance
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Nov 29 13:38:19 2020           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; TRISC_Project                                   ;
+; Top-level Entity Name              ; TRISC_Project                                   ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 144                                             ;
+;     Total combinational functions  ; 126                                             ;
+;     Dedicated logic registers      ; 37                                              ;
+; Total registers                    ; 37                                              ;
+; Total pins                         ; 44                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 128                                             ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C20F484C7       ;                    ;
+; Top-level entity name                                                      ; TRISC_Project      ; TRISC_Project      ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                   ;
++--------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                 ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                         ; Library ;
++--------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+; ../LAB12TRISC/LAB12TRISC.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/14/Desktop/Khaled_CSE2441-001/LAB12TRISC/LAB12TRISC.bdf                     ;         ;
+; ../TRISCRAMfall2020/TRISCRAMfall2020.v           ; yes             ; User Wizard-Generated File         ; C:/Users/14/Desktop/Khaled_CSE2441-001/TRISCRAMfall2020/TRISCRAMfall2020.v           ;         ;
+; ../lab_6/Binary2sevenS.v                         ; yes             ; User Verilog HDL File              ; C:/Users/14/Desktop/Khaled_CSE2441-001/lab_6/Binary2sevenS.v                         ;         ;
+; ../Lab7/A_X/AND_XOR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/14/Desktop/Khaled_CSE2441-001/Lab7/A_X/AND_XOR.bdf                          ;         ;
+; ../FullAdder/FullAdder.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/14/Desktop/Khaled_CSE2441-001/FullAdder/FullAdder.bdf                       ;         ;
+; ../RippleCarryAdder/RippleCarryAdder.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/14/Desktop/Khaled_CSE2441-001/RippleCarryAdder/RippleCarryAdder.bdf         ;         ;
+; ../Lab7/A-S-with overflow/Adder_Subtractor.bdf   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/14/Desktop/Khaled_CSE2441-001/Lab7/A-S-with overflow/Adder_Subtractor.bdf   ;         ;
+; ../Lab7/ALU/ALU.bdf                              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/14/Desktop/Khaled_CSE2441-001/Lab7/ALU/ALU.bdf                              ;         ;
+; ../Buffer_Register/Buffer_Register.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/14/Desktop/Khaled_CSE2441-001/Buffer_Register/Buffer_Register.bdf           ;         ;
+; ../Counter/Counter.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/14/Desktop/Khaled_CSE2441-001/Counter/Counter.bdf                           ;         ;
+; ../Program_Counter/Program_Counter.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/14/Desktop/Khaled_CSE2441-001/Program_Counter/Program_Counter.bdf           ;         ;
+; ../Accumulater/Accumulater.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/14/Desktop/Khaled_CSE2441-001/Accumulater/Accumulater.bdf                   ;         ;
+; ../Lab12/TRISC.v                                 ; yes             ; User Verilog HDL File              ; C:/Users/14/Desktop/Khaled_CSE2441-001/Lab12/TRISC.v                                 ;         ;
+; ../Instruction_Decoder/Instruction_Decoder.v     ; yes             ; User Verilog HDL File              ; C:/Users/14/Desktop/Khaled_CSE2441-001/Instruction_Decoder/Instruction_Decoder.v     ;         ;
+; ../Instruction_Register/Instruction_Register.bdf ; yes             ; User Block Diagram/Schematic File  ; C:/Users/14/Desktop/Khaled_CSE2441-001/Instruction_Register/Instruction_Register.bdf ;         ;
+; ../Program_Counter/TRISC_Project.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/14/Desktop/Khaled_CSE2441-001/Program_Counter/TRISC_Project.bdf             ;         ;
+; 74193.bdf                                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74193.bdf                        ;         ;
+; 74175.bdf                                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74175.bdf                        ;         ;
+; altsyncram.tdf                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                     ;         ;
+; stratix_ram_block.inc                            ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc              ;         ;
+; lpm_mux.inc                                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                        ;         ;
+; lpm_decode.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                     ;         ;
+; aglobal130.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                     ;         ;
+; a_rdenreg.inc                                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                      ;         ;
+; altrom.inc                                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                         ;         ;
+; altram.inc                                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                         ;         ;
+; altdpram.inc                                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                       ;         ;
+; db/altsyncram_7vc1.tdf                           ; yes             ; Auto-Generated Megafunction        ; C:/Users/14/Desktop/Khaled_CSE2441-001/Project/db/altsyncram_7vc1.tdf                ;         ;
+; busmux.tdf                                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/busmux.tdf                         ;         ;
+; lpm_mux.tdf                                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf                        ;         ;
+; muxlut.inc                                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc                         ;         ;
+; bypassff.inc                                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                       ;         ;
+; altshift.inc                                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                       ;         ;
+; db/mux_omc.tdf                                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/14/Desktop/Khaled_CSE2441-001/Project/db/mux_omc.tdf                        ;         ;
+; 74157.bdf                                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74157.bdf                        ;         ;
++--------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 144   ;
+;                                             ;       ;
+; Total combinational functions               ; 126   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 73    ;
+;     -- 3 input functions                    ; 21    ;
+;     -- <=2 input functions                  ; 32    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 126   ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 37    ;
+;     -- Dedicated logic registers            ; 37    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 44    ;
+; Total memory bits                           ; 128   ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; Clock ;
+; Maximum fan-out                             ; 22    ;
+; Total fan-out                               ; 615   ;
+; Average fan-out                             ; 2.86  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                          ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                   ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+--------------+
+; |TRISC_Project                            ; 126 (2)           ; 37 (0)       ; 128         ; 0            ; 0       ; 0         ; 44   ; 0            ; |TRISC_Project                                                                                        ; work         ;
+;    |ALU:inst5|                            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|ALU:inst5                                                                              ; work         ;
+;       |Adder_Subtractor:inst2|            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|ALU:inst5|Adder_Subtractor:inst2                                                       ; work         ;
+;          |RippleCarryAdder:inst|          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|ALU:inst5|Adder_Subtractor:inst2|RippleCarryAdder:inst                                 ; work         ;
+;             |FullAdder:inst6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|ALU:inst5|Adder_Subtractor:inst2|RippleCarryAdder:inst|FullAdder:inst6                 ; work         ;
+;             |FullAdder:inst7|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|ALU:inst5|Adder_Subtractor:inst2|RippleCarryAdder:inst|FullAdder:inst7                 ; work         ;
+;             |FullAdder:inst8|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|ALU:inst5|Adder_Subtractor:inst2|RippleCarryAdder:inst|FullAdder:inst8                 ; work         ;
+;             |FullAdder:inst9|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|ALU:inst5|Adder_Subtractor:inst2|RippleCarryAdder:inst|FullAdder:inst9                 ; work         ;
+;    |Accumulater:inst6|                    ; 37 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Accumulater:inst6                                                                      ; work         ;
+;       |74157:inst|                        ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Accumulater:inst6|74157:inst                                                           ; work         ;
+;       |Counter:inst2|                     ; 29 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Accumulater:inst6|Counter:inst2                                                        ; work         ;
+;          |74193:inst|                     ; 29 (29)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Accumulater:inst6|Counter:inst2|74193:inst                                             ; work         ;
+;    |Binary2sevenS:inst10|                 ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Binary2sevenS:inst10                                                                   ; work         ;
+;    |Binary2sevenS:inst11|                 ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Binary2sevenS:inst11                                                                   ; work         ;
+;    |Binary2sevenS:inst12|                 ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Binary2sevenS:inst12                                                                   ; work         ;
+;    |Binary2sevenS:inst4|                  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Binary2sevenS:inst4                                                                    ; work         ;
+;    |Buffer_Register:inst9|                ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Buffer_Register:inst9                                                                  ; work         ;
+;       |74175:inst|                        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Buffer_Register:inst9|74175:inst                                                       ; work         ;
+;    |Instruction_Register:inst|            ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Instruction_Register:inst                                                              ; work         ;
+;       |74175:inst|                        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Instruction_Register:inst|74175:inst                                                   ; work         ;
+;    |LAB12TRISC:inst2|                     ; 22 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|LAB12TRISC:inst2                                                                       ; work         ;
+;       |Instruction_Decoder:inst|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|LAB12TRISC:inst2|Instruction_Decoder:inst                                              ; work         ;
+;       |TRISC:inst1|                       ; 19 (19)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|LAB12TRISC:inst2|TRISC:inst1                                                           ; work         ;
+;    |Program_Counter:inst7|                ; 27 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Program_Counter:inst7                                                                  ; work         ;
+;       |74193:inst|                        ; 27 (27)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|Program_Counter:inst7|74193:inst                                                       ; work         ;
+;    |TRISCRAMfall2020:inst99|              ; 0 (0)             ; 0 (0)        ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|TRISCRAMfall2020:inst99                                                                ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|TRISCRAMfall2020:inst99|altsyncram:altsyncram_component                                ; work         ;
+;          |altsyncram_7vc1:auto_generated| ; 0 (0)             ; 0 (0)        ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|TRISCRAMfall2020:inst99|altsyncram:altsyncram_component|altsyncram_7vc1:auto_generated ; work         ;
+;    |busmux:inst1|                         ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|busmux:inst1                                                                           ; work         ;
+;       |lpm_mux:$00000|                    ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|busmux:inst1|lpm_mux:$00000                                                            ; work         ;
+;          |mux_omc:auto_generated|         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRISC_Project|busmux:inst1|lpm_mux:$00000|mux_omc:auto_generated                                     ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                 ;
++---------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+----------------------+
+; Name                                                                                              ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                  ;
++---------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+----------------------+
+; TRISCRAMfall2020:inst99|altsyncram:altsyncram_component|altsyncram_7vc1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 16           ; 8            ; --           ; --           ; 128  ; TRISCRAMfall2020.mif ;
++---------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                               ;
++--------+--------------+---------+--------------+--------------+----------------------------------------+----------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                        ; IP Include File                                                            ;
++--------+--------------+---------+--------------+--------------+----------------------------------------+----------------------------------------------------------------------------+
+; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |TRISC_Project|TRISCRAMfall2020:inst99 ; C:/Users/14/Desktop/Khaled_CSE2441-001/TRISCRAMfall2020/TRISCRAMfall2020.v ;
++--------+--------------+---------+--------------+--------------+----------------------------------------+----------------------------------------------------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |TRISC_Project|LAB12TRISC:inst2|TRISC:inst1|state                                                                                                                                                         ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+; Name    ; state.U ; state.T ; state.S ; state.R ; state.Q ; state.P ; state.N ; state.O ; state.M ; state.L ; state.K ; state.J ; state.I ; state.H ; state.F ; state.G ; state.E ; state.D ; state.C ; state.B ; state.A ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+; state.A ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ;
+; state.B ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 1       ;
+; state.C ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 1       ;
+; state.D ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 1       ;
+; state.E ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 1       ;
+; state.G ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.F ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.H ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.I ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.J ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.K ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.L ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.M ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.O ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.N ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.P ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.Q ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.R ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.S ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.T ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.U ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; LAB12TRISC:inst2|TRISC:inst1|state~4  ; Lost fanout        ;
+; LAB12TRISC:inst2|TRISC:inst1|state~5  ; Lost fanout        ;
+; LAB12TRISC:inst2|TRISC:inst1|state~6  ; Lost fanout        ;
+; LAB12TRISC:inst2|TRISC:inst1|state~7  ; Lost fanout        ;
+; LAB12TRISC:inst2|TRISC:inst1|state~8  ; Lost fanout        ;
+; Total Number of Removed Registers = 5 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 37    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 29    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Source assignments for TRISCRAMfall2020:inst99|altsyncram:altsyncram_component|altsyncram_7vc1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                              ;
++---------------------------------+--------------------+------+-------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                               ;
++---------------------------------+--------------------+------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LAB12TRISC:inst2|TRISC:inst1 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; A              ; 00000 ; Unsigned Binary                                  ;
+; B              ; 00001 ; Unsigned Binary                                  ;
+; C              ; 00010 ; Unsigned Binary                                  ;
+; D              ; 00011 ; Unsigned Binary                                  ;
+; E              ; 00100 ; Unsigned Binary                                  ;
+; F              ; 00110 ; Unsigned Binary                                  ;
+; G              ; 00101 ; Unsigned Binary                                  ;
+; H              ; 00111 ; Unsigned Binary                                  ;
+; I              ; 01000 ; Unsigned Binary                                  ;
+; J              ; 01001 ; Unsigned Binary                                  ;
+; K              ; 01010 ; Unsigned Binary                                  ;
+; L              ; 01011 ; Unsigned Binary                                  ;
+; M              ; 01100 ; Unsigned Binary                                  ;
+; N              ; 01110 ; Unsigned Binary                                  ;
+; O              ; 01101 ; Unsigned Binary                                  ;
+; P              ; 01111 ; Unsigned Binary                                  ;
+; Q              ; 10000 ; Unsigned Binary                                  ;
+; R              ; 10001 ; Unsigned Binary                                  ;
+; S              ; 10010 ; Unsigned Binary                                  ;
+; T              ; 10011 ; Unsigned Binary                                  ;
+; U              ; 10100 ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TRISCRAMfall2020:inst99|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                     ;
++------------------------------------+----------------------+------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                  ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                           ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                  ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                                  ;
+; WIDTH_A                            ; 8                    ; Signed Integer                           ;
+; WIDTHAD_A                          ; 4                    ; Signed Integer                           ;
+; NUMWORDS_A                         ; 16                   ; Signed Integer                           ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                                  ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                  ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                  ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                  ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                  ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                  ;
+; WIDTH_B                            ; 1                    ; Untyped                                  ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                  ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                  ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                  ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                  ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                  ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                  ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                  ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                  ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                  ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                  ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                  ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                  ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                  ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                  ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                           ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                  ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                  ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                  ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                  ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                  ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                  ;
+; INIT_FILE                          ; TRISCRAMfall2020.mif ; Untyped                                  ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                  ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                  ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                  ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                  ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                  ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                  ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                  ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                  ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                  ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                  ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                  ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                  ;
+; CBXI_PARAMETER                     ; altsyncram_7vc1      ; Untyped                                  ;
++------------------------------------+----------------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst1 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WIDTH          ; 4     ; Untyped                          ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                    ;
++-------------------------------------------+---------------------------------------------------------+
+; Name                                      ; Value                                                   ;
++-------------------------------------------+---------------------------------------------------------+
+; Number of entity instances                ; 1                                                       ;
+; Entity Instance                           ; TRISCRAMfall2020:inst99|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                             ;
+;     -- WIDTH_A                            ; 8                                                       ;
+;     -- NUMWORDS_A                         ; 16                                                      ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                                  ;
+;     -- WIDTH_B                            ; 1                                                       ;
+;     -- NUMWORDS_B                         ; 1                                                       ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                  ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                            ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                    ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                               ;
++-------------------------------------------+---------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Nov 29 13:38:15 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TRISC_Project -c TRISC_Project
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/lab12trisc/lab12trisc.bdf
+    Info (12023): Found entity 1: LAB12TRISC
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/triscramfall2020/triscramfall2020.v
+    Info (12023): Found entity 1: TRISCRAMfall2020
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/triscrambsp2019/triscrambsp2019.v
+    Info (12023): Found entity 1: TRISCRAMBsp2019
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/lab_6/binary2sevens.v
+    Info (12023): Found entity 1: Binary2sevenS
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/lab7/a_x/and_xor.bdf
+    Info (12023): Found entity 1: AND_XOR
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/fulladder/fulladder.bdf
+    Info (12023): Found entity 1: FullAdder
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/ripplecarryadder/ripplecarryadder.bdf
+    Info (12023): Found entity 1: RippleCarryAdder
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/lab7/a-s-with overflow/adder_subtractor.bdf
+    Info (12023): Found entity 1: Adder_Subtractor
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/lab7/alu/alu.bdf
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/buffer_register/buffer_register.bdf
+    Info (12023): Found entity 1: Buffer_Register
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/counter/counter.bdf
+    Info (12023): Found entity 1: Counter
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/lab11ram/lab11ram.v
+    Info (12023): Found entity 1: Lab11RAM
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/program_counter/program_counter.bdf
+    Info (12023): Found entity 1: Program_Counter
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/accumulater/accumulater.bdf
+    Info (12023): Found entity 1: Accumulater
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/lab12/trisc.v
+    Info (12023): Found entity 1: TRISC
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/instruction_decoder/instruction_decoder.v
+    Info (12023): Found entity 1: Instruction_Decoder
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/instruction_register/instruction_register.bdf
+    Info (12023): Found entity 1: Instruction_Register
+Info (12021): Found 1 design units, including 1 entities, in source file /users/14/desktop/khaled_cse2441-001/program_counter/trisc_project.bdf
+    Info (12023): Found entity 1: TRISC_Project
+Info (12127): Elaborating entity "TRISC_Project" for the top level hierarchy
+Info (12128): Elaborating entity "Binary2sevenS" for hierarchy "Binary2sevenS:inst4"
+Info (12128): Elaborating entity "Program_Counter" for hierarchy "Program_Counter:inst7"
+Info (12128): Elaborating entity "74193" for hierarchy "Program_Counter:inst7|74193:inst"
+Info (12130): Elaborated megafunction instantiation "Program_Counter:inst7|74193:inst"
+Info (12128): Elaborating entity "LAB12TRISC" for hierarchy "LAB12TRISC:inst2"
+Info (12128): Elaborating entity "TRISC" for hierarchy "LAB12TRISC:inst2|TRISC:inst1"
+Info (12128): Elaborating entity "Instruction_Decoder" for hierarchy "LAB12TRISC:inst2|Instruction_Decoder:inst"
+Info (12128): Elaborating entity "Instruction_Register" for hierarchy "Instruction_Register:inst"
+Info (12128): Elaborating entity "74175" for hierarchy "Instruction_Register:inst|74175:inst"
+Info (12130): Elaborated megafunction instantiation "Instruction_Register:inst|74175:inst"
+Info (12128): Elaborating entity "TRISCRAMfall2020" for hierarchy "TRISCRAMfall2020:inst99"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "TRISCRAMfall2020:inst99|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "TRISCRAMfall2020:inst99|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "TRISCRAMfall2020:inst99|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "TRISCRAMfall2020.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "16"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "widthad_a" = "4"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7vc1.tdf
+    Info (12023): Found entity 1: altsyncram_7vc1
+Info (12128): Elaborating entity "altsyncram_7vc1" for hierarchy "TRISCRAMfall2020:inst99|altsyncram:altsyncram_component|altsyncram_7vc1:auto_generated"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst1"
+Info (12130): Elaborated megafunction instantiation "BUSMUX:inst1"
+Info (12133): Instantiated megafunction "BUSMUX:inst1" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "4"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst1|lpm_mux:$00000"
+Info (12131): Elaborated megafunction instantiation "BUSMUX:inst1|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_omc.tdf
+    Info (12023): Found entity 1: mux_omc
+Info (12128): Elaborating entity "mux_omc" for hierarchy "BUSMUX:inst1|lpm_mux:$00000|mux_omc:auto_generated"
+Info (12128): Elaborating entity "Accumulater" for hierarchy "Accumulater:inst6"
+Info (12128): Elaborating entity "Counter" for hierarchy "Accumulater:inst6|Counter:inst2"
+Info (12128): Elaborating entity "74157" for hierarchy "Accumulater:inst6|74157:inst"
+Info (12130): Elaborated megafunction instantiation "Accumulater:inst6|74157:inst"
+Info (12128): Elaborating entity "Buffer_Register" for hierarchy "Buffer_Register:inst9"
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst5"
+Info (12128): Elaborating entity "Adder_Subtractor" for hierarchy "ALU:inst5|Adder_Subtractor:inst2"
+Info (12128): Elaborating entity "RippleCarryAdder" for hierarchy "ALU:inst5|Adder_Subtractor:inst2|RippleCarryAdder:inst"
+Info (12128): Elaborating entity "FullAdder" for hierarchy "ALU:inst5|Adder_Subtractor:inst2|RippleCarryAdder:inst|FullAdder:inst8"
+Info (12128): Elaborating entity "AND_XOR" for hierarchy "ALU:inst5|AND_XOR:inst"
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "Program_Counter:inst7|74193:inst|26" is converted into an equivalent circuit using register "Program_Counter:inst7|74193:inst|26~_emulated" and latch "Program_Counter:inst7|74193:inst|26~1"
+    Warning (13310): Register "Program_Counter:inst7|74193:inst|25" is converted into an equivalent circuit using register "Program_Counter:inst7|74193:inst|25~_emulated" and latch "Program_Counter:inst7|74193:inst|25~1"
+    Warning (13310): Register "Program_Counter:inst7|74193:inst|24" is converted into an equivalent circuit using register "Program_Counter:inst7|74193:inst|24~_emulated" and latch "Program_Counter:inst7|74193:inst|24~1"
+    Warning (13310): Register "Program_Counter:inst7|74193:inst|23" is converted into an equivalent circuit using register "Program_Counter:inst7|74193:inst|23~_emulated" and latch "Program_Counter:inst7|74193:inst|23~1"
+    Warning (13310): Register "Accumulater:inst6|Counter:inst2|74193:inst|26" is converted into an equivalent circuit using register "Accumulater:inst6|Counter:inst2|74193:inst|26~_emulated" and latch "Accumulater:inst6|Counter:inst2|74193:inst|26~1"
+    Warning (13310): Register "Accumulater:inst6|Counter:inst2|74193:inst|25" is converted into an equivalent circuit using register "Accumulater:inst6|Counter:inst2|74193:inst|25~_emulated" and latch "Accumulater:inst6|Counter:inst2|74193:inst|25~1"
+    Warning (13310): Register "Accumulater:inst6|Counter:inst2|74193:inst|24" is converted into an equivalent circuit using register "Accumulater:inst6|Counter:inst2|74193:inst|24~_emulated" and latch "Accumulater:inst6|Counter:inst2|74193:inst|24~1"
+    Warning (13310): Register "Accumulater:inst6|Counter:inst2|74193:inst|23" is converted into an equivalent circuit using register "Accumulater:inst6|Counter:inst2|74193:inst|23~_emulated" and latch "Accumulater:inst6|Counter:inst2|74193:inst|23~1"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Dout12" is stuck at GND
+    Warning (13410): Pin "Dout13" is stuck at GND
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 196 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 144 logic cells
+    Info (21064): Implemented 8 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4625 megabytes
+    Info: Processing ended: Sun Nov 29 13:38:19 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
+
+

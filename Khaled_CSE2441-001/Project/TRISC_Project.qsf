@@ -1,0 +1,117 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 19:34:34  November 19, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		TRISC_Project_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C20F484C7
+set_global_assignment -name TOP_LEVEL_ENTITY TRISC_Project
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:34:34  NOVEMBER 19, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_R22 -to Start/Stop
+set_location_assignment PIN_R21 -to Clock
+set_location_assignment PIN_F4 -to a0
+set_location_assignment PIN_D5 -to b0
+set_location_assignment PIN_D6 -to c00
+set_location_assignment PIN_J4 -to d0
+set_location_assignment PIN_L8 -to e0
+set_location_assignment PIN_F3 -to f0
+set_location_assignment PIN_D4 -to g0
+set_location_assignment PIN_G5 -to a1
+set_location_assignment PIN_G6 -to b1
+set_location_assignment PIN_C2 -to c122
+set_location_assignment PIN_C1 -to d1
+set_location_assignment PIN_E3 -to e1
+set_location_assignment PIN_E4 -to f1
+set_location_assignment PIN_D3 -to g1
+set_location_assignment PIN_E1 -to a2
+set_location_assignment PIN_H6 -to b2
+set_location_assignment PIN_H5 -to c22
+set_location_assignment PIN_H4 -to d2
+set_location_assignment PIN_G3 -to e2
+set_location_assignment PIN_D2 -to f2
+set_location_assignment PIN_D1 -to g2
+set_location_assignment PIN_J2 -to a3
+set_location_assignment PIN_J1 -to b3
+set_location_assignment PIN_H2 -to c33
+set_location_assignment PIN_H1 -to d3
+set_location_assignment PIN_F2 -to e3
+set_location_assignment PIN_F1 -to f3
+set_location_assignment PIN_E2 -to g3
+set_location_assignment PIN_U22 -to Dout0
+set_location_assignment PIN_U21 -to Dout1
+set_location_assignment PIN_V22 -to Dout2
+set_location_assignment PIN_V21 -to Dout3
+set_location_assignment PIN_W22 -to Dout4
+set_location_assignment PIN_W21 -to Dout5
+set_location_assignment PIN_Y22 -to Dout7
+set_location_assignment PIN_Y21 -to Dout8
+set_location_assignment PIN_R20 -to Dout9
+set_location_assignment PIN_R19 -to Dout10
+set_location_assignment PIN_U19 -to Dout11
+set_location_assignment PIN_Y19 -to Dout12
+set_location_assignment PIN_T18 -to Dout13
+set_location_assignment PIN_V19 -to Dout14
+set_global_assignment -name BDF_FILE ../LAB12TRISC/LAB12TRISC.bdf
+set_global_assignment -name VERILOG_FILE ../TRISCRAMfall2020/TRISCRAMfall2020.v
+set_global_assignment -name MIF_FILE ../TRISCRAMBsp2019/TRISCRAMBsp2019.mif
+set_global_assignment -name VERILOG_FILE ../TRISCRAMBsp2019/TRISCRAMBsp2019.v
+set_global_assignment -name VERILOG_FILE ../lab_6/Binary2sevenS.v
+set_global_assignment -name BDF_FILE ../Lab7/A_X/AND_XOR.bdf
+set_global_assignment -name BDF_FILE ../FullAdder/FullAdder.bdf
+set_global_assignment -name BDF_FILE ../RippleCarryAdder/RippleCarryAdder.bdf
+set_global_assignment -name BDF_FILE "../Lab7/A-S-with overflow/Adder_Subtractor.bdf"
+set_global_assignment -name BDF_FILE ../Lab7/ALU/ALU.bdf
+set_global_assignment -name BDF_FILE ../Buffer_Register/Buffer_Register.bdf
+set_global_assignment -name BDF_FILE ../Counter/Counter.bdf
+set_global_assignment -name VERILOG_FILE ../Lab11RAM/Lab11RAM.v
+set_global_assignment -name BDF_FILE ../Program_Counter/Program_Counter.bdf
+set_global_assignment -name BDF_FILE ../Accumulater/Accumulater.bdf
+set_global_assignment -name VERILOG_FILE ../Lab12/TRISC.v
+set_global_assignment -name VERILOG_FILE ../Instruction_Decoder/Instruction_Decoder.v
+set_global_assignment -name BDF_FILE ../Instruction_Register/Instruction_Register.bdf
+set_global_assignment -name BDF_FILE ../Program_Counter/TRISC_Project.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
